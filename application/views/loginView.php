@@ -119,11 +119,10 @@
                                     <div class="row">
                                       <!-- <div class="col-xs-3"> </div> -->
                                         <div class="col-xs-8 center-block" style="float:none">
-                                            <div class="login-button-pro" style="text-align: center">
-                                                
+                                            <div class="login-button-pro" style="text-align: center; padding: 0px; padding-bottom: 10%;">
                                                 <input type="submit" class="login-button login-button-lg" name="btn_log" value="Masuk"/>
-                                               
                                             </div>
+                                            <a style="text-align: center;" href="home">Kembali ke Beranda</a>
                                         </div>
                                         <!-- <div class="col-xs-3"> </div> -->
                                     </div>

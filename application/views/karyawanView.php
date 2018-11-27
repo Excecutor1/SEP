@@ -66,10 +66,10 @@
                 <div class="sidebar-header">
                     <img style="max-width: 100px" src="style/img/logo_sep.png" alt="..." class="img-circle profile_img">
                     </a>
-                    <h3>Admin SEP</h3>
+                  
                     <br>
                     <strong>AS</strong>
-                    <span style="color: black"><h4>Selamat Datang</h4>
+                    <span style="color: black"><h4 class="welcome-admin">Selamat Datang</h4>
                 <h3 style="color: black">- <?php echo $this->pengguna['namaPengguna'] ?> -</h3></span>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
@@ -116,9 +116,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-1 col-md-6 col-sm-6 col-lg-12">
-                                <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
-                                    <i class="fa fa-bars"></i>
-                                </button>
+                                
                                 <div class="admin-logo logo-wrap-pro">
                                     <a href="#"><img src="img/logo/log.png" alt="" />
                                     </a>
@@ -178,7 +176,7 @@
                         <div class="col-lg-12">
                             <div class="breadcome-list map-mg-t-40-gl shadow-reset">
 
-                            <h3>Daftar Karyawan</h3>
+                            <h3 class="header-navigator">Administrator / Daftar Karyawan</h3>
                                 <div class="row">
                                     
                                 </div>
