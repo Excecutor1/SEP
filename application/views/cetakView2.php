@@ -101,7 +101,7 @@ http://www.tooplate.com/view/2078-adventure
     <div class="login-form-area mg-t-30 mg-b-40 tengah1">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-6"></div>
+                        <div class="col-xs-6"></div>
                             <form role="form" action="login" method="POST">
                             <div class="col-lg-6">
                                 <div class="login-bg">
@@ -183,7 +183,7 @@ http://www.tooplate.com/view/2078-adventure
                                   </div>
                                   <div class="form-group-inner">
                                     <div class="row">
-                                        <div class="col-xs-9 center-block" style="float: none;">
+                                        <div class="col-xs-8 center-block" style="float: none;" style="color:#000" style="background: transparent;">
                                             <div class="col-lg-3">
                                                    <label class="login2 pull-right pull-right-pro">Salinan</label>
                                                                 </div>
@@ -196,7 +196,7 @@ http://www.tooplate.com/view/2078-adventure
                                         </div>
                                     <!-- </div> -->
                                     </div>
-                                  </div>
+                                  </div>  
                                     <div class="row">
                                       <!-- <div class="col-xs-3"> </div> -->
                                         <div class="col-xs-8 center-block" style="float:none">
