@@ -19,16 +19,21 @@ class daftarModel extends CI_Model{
 
 	public function daftar(){
 		$data = array(
-		'ID_LEVEL' => '2',
-        'NAMA_LENGKAP' => $this->namaLengkap,
-        'NAMA_PENGGUNA' => $this->namaPengguna,
-        'EMAIL' => $this->email,
-        'ALAMAT' => $this->alamat,
-        'NO_TLP' => $this->noTlp,
-        'KATA_SANDI' => $this->kataSandi
+		'id_level' => 'lvl1',
+        'nama_lengkap' => $this->namaLengkap,
+        'nama_pengguna' => $this->namaPengguna,
+        'email' => $this->email,
+        'alamat' => $this->alamat,
+        'no_tlp' => $this->noTlp,
+        'kata_sandi' => $this->kataSandi
 		);
 		$this->db->insert('pengguna', $data);
 		}
+
+	public function hapus($id){
+		$this->db->where('id_pengguna', $id);
+			return $this->db->delete('pengguna');
+	}
 	}
 
 	/*private function _attributeLabels(){

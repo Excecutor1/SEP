@@ -10,5 +10,11 @@ class karyawanModel extends CI_Model{
 		$data=$this->db->query($sql);
     	return $data->result_array();
 	}
+	public function hapus($id){
+		$sql = sprintf("DELETE FROM pengguna WHERE id_pengguna = '$id'");
+		$data=$this->db->query($sql);
+
 }
+}
+
 ?>

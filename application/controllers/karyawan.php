@@ -7,19 +7,26 @@ class karyawan extends CI_Controller{
             $this->load->model('karyawanModel');
     	}
 
-    public function index(){
-    	$this->data['hasil']=$this->karyawanModel->karyawan();
-        $this->level = $this->session->userdata('level');
-        $this->pengguna = $this->session->userdata;
-		$this->load->view('karyawanView', $this->data, $this->level, $this->pengguna);
-		}
+     public function index(){
+        if ($this->session->has_userdata('namaPengguna')) {
+            $this->load->model('cetakModel');
+            $this->data['hasil']=$this->karyawanModel->karyawan();
+            $this->level = $this->session->userdata('level');
+            $this->pengguna = $this->session->userdata;
+            $this->load->view('karyawanView', $this->data, $this->level, $this->pengguna);
+            }
+        else{
+            redirect('login');
+            }
+        }
     public function lihatKaryawan(){
         $id = $this->uri->segment(3);
         $this->cetakModel->getFile($id);
     }
     public function hapusKaryawan(){
         $id = $this->uri->segment(3);
-        $this->cetakModel->selesai($id);
+        $this->karyawanModel->hapus($id);
+        redirect('karyawan');
     }
 }
 ?>

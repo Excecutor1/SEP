@@ -250,7 +250,7 @@
                   <td><?php echo $row['kata_sandi']; ?></td>
                   <td>
                   <!-- <td><button class="btn btn-primary btn-round"><?php// echo "<a style='color:white' href='belumCetak/lihatKaryawan/".$this->id."'>Lihat</a>"?></button> -->
-                  <button class="btn btn-success btn-round"><?php echo "<a style='color:white' href='belumCetak/hapusKaryawan/".$this->id."'>Hapus</a>"?></button>
+                  <button class="btn btn-success btn-round"><?php echo "<a style='color:white' href='karyawan/hapusKaryawan/".$this->id."'>Hapus</a>"?></button>
                   </td>
                           </tr>
                           <?php }; ?>

@@ -76,10 +76,9 @@
                             <div class="col-lg-4">
                                 <div class="login-bg">
                                     <div class="row">
-                                        <div class="col-lg-12">
-                                           <h3 align="center">Tambahkan</h3>
-                                           <h3 align="center">Karyawan</h3>
-                                        </div>
+                                        <div class="alert alert-success alert-st-one" role="alert">
+                                    <p class="message-mg-rt message-alert-none " class="text-center" style="text-align: center;"><strong style="font-size: 30px">Tambah Karyawan</strong> </p>
+                                </div>
                                     </div>
                                     
                                     <div class="row">
@@ -100,19 +99,19 @@
                                         <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
                                                 <input placeholder="Email" name="email" type="email" autofocus/>
-                                                <i class="fa fa-user login-user" aria-hidden="true"></i>
+                                                <i class="fa fa-envelope login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                          <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
                                                 <input placeholder="Alamat" name="alamat" type="text" autofocus/>
-                                                <i class="fa fa-user login-user" aria-hidden="true"></i>
+                                                <i class="fa fa-map-marker login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                          <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
                                                 <input placeholder="No Telepon" name="noTlp" type="text" autofocus/>
-                                                <i class="fa fa-user login-user" aria-hidden="true"></i>
+                                                <i class="fa fa-phone login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                     </div>

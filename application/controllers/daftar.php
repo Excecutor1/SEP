@@ -10,19 +10,27 @@ class daftar extends CI_Controller{
 	}
 
 	public function index (){
-		if (isset($_POST['btn_log'])) {
-			$this->model->namaPengguna = $_POST['namaPengguna'];
-			$this->model->namaLengkap = $_POST['namaLengkap'];
-			$this->model->email = $_POST['email'];
-			$this->model->alamat = $_POST['alamat'];
-			$this->model->noTlp = $_POST['noTlp'];
-			$this->model->kataSandi = $_POST['kataSandi'];
-			$this->model->daftar();
-			redirect('admin');
-			}
-			else{
-				$this->load->view('daftarView');
-			}
+		if ($this->session->has_userdata('namaPengguna')) {
+           if (isset($_POST['btn_log'])) {
+            $this->model->namaPengguna = $_POST['namaPengguna'];
+            $this->model->namaLengkap = $_POST['namaLengkap'];
+            $this->model->email = $_POST['email'];
+            $this->model->alamat = $_POST['alamat'];
+            $this->model->noTlp = $_POST['noTlp'];
+            $this->model->kataSandi = $_POST['kataSandi'];
+            $this->model->daftar();
+            redirect('admin');
+            }
+            else{
+                $this->load->view('daftarView');
+            }
+    		}
+    	else{
+        	redirect('login');
+    		}
+		}
 	}
-}
+	  
+
+
 ?>

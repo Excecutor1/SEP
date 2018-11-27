@@ -6,7 +6,7 @@
 
 	<!-- Template site title
    ================================================== -->
-	<title>Adventure Bootstrap Theme by tooplate</title>
+	<title>Beranda</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,7 +86,7 @@ http://www.tooplate.com/view/2078-adventure
             
                 <!-- <li><a href="#home" class="smoothScroll">HOME</a></li> -->
                 
-                <li><a href="#work" class="smoothScroll">HOME</a></li>
+                <li><a href="#work" class="smoothScroll">BERANDA</a></li>
                 <li><a href="#about" class="smoothScroll">TENTANG</a></li>
                 <li><a href="#team" class="smoothScroll">CETAK</a></li>
                 <li><a href="#plan" class="smoothScroll">HARGA</a></li>
@@ -150,21 +150,21 @@ http://www.tooplate.com/view/2078-adventure
 			<div id="owl-work" class="owl-carousel">
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-					<i class="icon-tools medium-icon"></i>
+					<i class="fa fa-print" style="font-size:48px"></i>
 						<h3>CETAK PAPER</h3>
 						<hr>
-						<p>Cetak Dokumen anda secara online</p>
+						<p>Cetak Dokumen anda secara online disini</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-					<i class="icon-tablet medium-icon"></i>
+					<i class="icon-tablet" style="font-size:46px"></i>
 						<h3>FINISHING</h3>
 						<hr>
 						<p>Pilih segala bentuk finishing yang tersedia sesuai dengan keinginan</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<i class="icon-bike medium-icon"></i>
+					<i class="fa fa-money" style="font-size:46px"></i>
 						<h3>CEK HARGA</h3>
 						<hr>
 						<p>Cek Harga semua layanan di SEP dan sesuaikan dengan kebutuhan</p>
@@ -299,6 +299,7 @@ http://www.tooplate.com/view/2078-adventure
 					<h1 class="heading">OUR TEAM</h1>
 					<hr>
 					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
+					<button><a href="cetak2"> cetak </a></button>
 				</div>
 			</div>
 
