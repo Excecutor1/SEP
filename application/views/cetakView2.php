@@ -189,7 +189,7 @@ http://www.tooplate.com/view/2078-adventure
                                                                 </div>
                                                                 <div class="col-xs-8">
                                                                     <div class="form-select-list">
-                                                                            <input type="number" class="form-control" name="salinan" placeholder="Jumlah Salinan">
+                                                                            <input type="number" class="form-control" name="salinan">
                                                                         </select>
                                                                     </div>
                                                                 </div>
