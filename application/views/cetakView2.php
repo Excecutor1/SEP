@@ -101,7 +101,7 @@ http://www.tooplate.com/view/2078-adventure
     <div class="login-form-area mg-t-30 mg-b-40 tengah1">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-6"></div>
+                        <div class="col-xs-6"></div>
                             <form role="form" action="login" method="POST">
                             <div class="col-lg-6">
                                 <div class="login-bg">
@@ -189,14 +189,14 @@ http://www.tooplate.com/view/2078-adventure
                                                                 </div>
                                                                 <div class="col-xs-8">
                                                                     <div class="form-select-list">
-                                                                            <input type="number" class="form-control" name="salinan">
+                                                                            <input type="number" class="form-control" name="salinan" style="color: #000">
                                                                         </select>
                                                                     </div>
                                                                 </div>
                                         </div>
                                     <!-- </div> -->
                                     </div>
-                                  </div>
+                                  </div>  
                                     <div class="row">
                                       <!-- <div class="col-xs-3"> </div> -->
                                         <div class="col-xs-8 center-block" style="float:none">

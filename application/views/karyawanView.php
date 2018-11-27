@@ -154,7 +154,7 @@
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
                                                 <li><a href="#"><span class="adminpro-icon adminpro-user-rounded author-log-ic"></span>My Profile</a>
                                                 </li>
-                                                <li><a href="login/logout"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
+                                                <li><a href="logout"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
                                                 </li>
                                             </ul>
                                         </li>
