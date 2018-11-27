@@ -183,7 +183,7 @@ http://www.tooplate.com/view/2078-adventure
                                   </div>
                                   <div class="form-group-inner">
                                     <div class="row">
-                                        <div class="col-xs-9 center-block" style="float: none;">
+                                        <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="col-lg-3">
                                                    <label class="login2 pull-right pull-right-pro">Salinan</label>
                                                                 </div>
