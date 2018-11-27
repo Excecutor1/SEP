@@ -183,13 +183,13 @@ http://www.tooplate.com/view/2078-adventure
                                   </div>
                                   <div class="form-group-inner">
                                     <div class="row">
-                                        <div class="col-xs-8 center-block" style="float: none;" style="color:#000" style="background: transparent;">
+                                        <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="col-lg-3">
                                                    <label class="login2 pull-right pull-right-pro">Salinan</label>
                                                                 </div>
                                                                 <div class="col-xs-8">
                                                                     <div class="form-select-list">
-                                                                            <input type="number" class="form-control" name="salinan">
+                                                                            <input type="number" class="form-control" name="salinan" style="color: #000">
                                                                         </select>
                                                                     </div>
                                                                 </div>
