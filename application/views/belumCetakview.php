@@ -230,10 +230,9 @@
                           <tr class="headings">
                             <th>ID Transaksi</th>
                             <th>Pengguna</th>
-                            <th>Detail</th>
                             <th>Status</th>
                             <th>Harga Total</th>
-                            <th>Aksi</th>
+                            <th>Detail</th>
                             
                           </tr>
                         </thead>
@@ -244,12 +243,90 @@
                             <?php $this->id = $row['id_transaksi'];?>
                                 <td><?php echo $row['id_transaksi']; ?></td>
                                 <td><?php echo $row['nama_pengguna']; ?></td>
-                                <td><a href="#">detail</a></td>
                                 <td><?php echo $row['id_status']; ?></td>
                                 <td>Harga Total</td>
-                                <td><button class="btn btn-primary btn-round"><?php echo "<a style='color:white' href='belumCetak/lihatFile/".$this->id."'>Cetak</a>"?></button>
-                                    <button class="btn btn-success btn-round"><?php echo "<a style='color:white' href='belumCetak/selesaiCetak/".$this->id."'>Selesai</a>"?></button>
-                                </td>
+                                <td>
+                                            <div class="col-lg-12">
+                                                <div class="modal-bootstrap modal-login-form">
+                                                    <a class="zoomInDown mg-t" href="#" data-toggle="modal" data-target="#zoomInDown1">Detail</a>
+                                                </div>
+                                                <div id="zoomInDown1" class="modal modal-adminpro-general modal-zoomInDown fade" role="dialog">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-close-area modal-close-df">
+                                                                <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="modal-login-form-inner">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <div class="basic-login-inner modal-basic-inner">
+                                                                                <h3>Detail</h3> <br> 
+                                                                                <form action="#">
+                                                                                    <div class="form-group-inner">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-4">
+                                                                                                <label class="login2">Warna</label>
+                                                                                            </div>
+                                                                                            <div class="col-lg-8">
+                                                                                                <input type="text" class="form-control" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="form-group-inner">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-4">
+                                                                                                <label class="login2">Kertas</label>
+                                                                                            </div>
+                                                                                            <div class="col-lg-8">
+                                                                                                <input type="text" class="form-control" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                     <div class="form-group-inner">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-4">
+                                                                                                <label class="login2">Finishing</label>
+                                                                                            </div>
+                                                                                            <div class="col-lg-8">
+                                                                                                <input type="text" class="form-control" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                     <div class="form-group-inner">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-4">
+                                                                                                <label class="login2">Salinan</label>
+                                                                                            </div>
+                                                                                            <div class="col-lg-8">
+                                                                                                <input type="text" class="form-control" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="login-btn-inner">
+                                                                                        
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-10"></div>
+                                                                                            <div class="col-lg-2">
+                                                                                                <div class="login-horizental">
+                                                                                                    <button class="btn btn-primary btn-round"><?php echo "<a style='color:white' href='belumCetak/lihatFile/".$this->id."'>Cetak</a>"?></button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+</td>
+                               
                           </tr>
                           <?php }; ?>
                         </tbody>
@@ -259,7 +336,6 @@
                   </div>
                 </div>
               </div>
-          
           <!-- /top tiles -->
 
           
