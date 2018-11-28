@@ -64,14 +64,7 @@ http://www.tooplate.com/view/2078-adventure
     <!-- modernizr JS
         ============================================ -->
     <script src="style/js/vendor/modernizr-2.8.3.min.js"></script>
-    <style type="text/css">
-      .tengah1 {
-        margin-top: 10px;
-    }
-    .tengah2{
-      margin-top: 40px;
-    }
-    </style>
+
 </head>
 
 <body class="materialdesign">
@@ -86,11 +79,11 @@ http://www.tooplate.com/view/2078-adventure
 
 
         
-        <section id="about" class="parallax-section" style="padding-top: 5%; padding-bottom: 5%;">
+        <section id="about" class="parallax-section " style="padding-top: 6.8%; padding-bottom: 8%;">
   <div class="container">
     <div class="row">
 
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-sm-12 mg-t-baru mg-b-baru">
         <h3 class="color-white">OUR STORY</h3>
         <h2>ADVENTURE STUDIO</h2>
         <p class="color-white">Adventure is free Bootstrap theme by <a rel="nofollow" href="http://www.tooplate.com" target="_parent">tooplate</a>. Download, edit, and use this layout for your website. Feel free to modify or remove anything to meet your desire. Excepteu sunt in culpa qui officia deserunt mollit.</p>
@@ -98,7 +91,7 @@ http://www.tooplate.com/view/2078-adventure
       </div>
   
             <!-- login Start-->
-    <div class="login-form-area mg-t-30 mg-b-40 tengah1">
+    <div class="login-form-area mg-t-baru mg-b-baru">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-6"></div>
@@ -112,16 +105,10 @@ http://www.tooplate.com/view/2078-adventure
                                     </div>
                                    
                                     <div class="form-group-inner">
-                                       <div class="alert alert-success alert-st-one" role="alert">
+                                     
                                     <span class="adminpro-icon adminpro-checked-pro admin-check-pro admin-check-pro-none"></span>
                                     <p class="message-mg-rt "><strong>Pengaturan File</strong> </p>
-                                </div>
-                                <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="login-title">
-                                            </div>
-                                        </div>
-                                    </div>
+                                
                                     <div class="row">
                                       <!-- <div class="col-lg-12"> -->
                                       
