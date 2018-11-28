@@ -76,8 +76,8 @@
                             <div class="col-lg-4">
                                 <div class="login-bg">
                                     <div class="row">
-                                        <div class="alert alert-success alert-st-one" role="alert">
-                                    <p class="message-mg-rt message-alert-none " class="text-center" style="text-align: center;"><strong style="font-size: 30px">Tambah Karyawan</strong> </p>
+                                        <div class="karyawan-top">
+                                    <p class="text-center" style="text-align: center;"><strong style="font-size: 35px; color: white;">Tambah Karyawan</strong> </p>
                                 </div>
                                     </div>
                                     
