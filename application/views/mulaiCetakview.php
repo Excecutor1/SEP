@@ -86,7 +86,7 @@ http://www.tooplate.com/view/2078-adventure
 
 
         
-        <section id="about" class="parallax-section">
+        <section id="about" class="parallax-section" style="padding-top: 5%; padding-bottom: 5%;">
   <div class="container">
     <div class="row">
 
@@ -133,8 +133,9 @@ http://www.tooplate.com/view/2078-adventure
                                                                     <div class="form-select-list">
                                                                         <select  class="form-control custom-select-value" name="text">
                                                                           <option value="0">Pilih</option>
-                                                                            <option>Hitam Putih</option>
-                                                                            <option>Berwarna</option>
+                                                                            <?php foreach($warna as $row){
+                                                                              echo "<option>".$row['warna']."</option>";}
+                                                                            ?>
                                                                         </select>
                                                                     </div>
                                                                 
@@ -152,8 +153,9 @@ http://www.tooplate.com/view/2078-adventure
                                                                     <div class="form-select-list">
                                                                         <select class="form-control custom-select-value" name="text">
                                                                           <option value="0">Pilih</option>
-                                                                            <option>A4</option>
-                                                                            <option>F4</option>
+                                                                            <?php foreach($kertas as $row){
+                                                                              echo "<option>".$row['kertas']."</option>";}
+                                                                            ?>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -172,8 +174,9 @@ http://www.tooplate.com/view/2078-adventure
                                                                     <div class="form-select-list">
                                                                         <select class="form-control custom-select-value" name="text">
                                                                           <option value="0">Pilih</option>
-                                                                            <option>Jilid</option>
-                                                                            <option>Staples</option>
+                                                                            <?php foreach($finishing as $row){
+                                                                              echo "<option>".$row['finishing']."</option>";}
+                                                                            ?>
                                                                         </select>
                                                                     </div>
                                                                 </div>

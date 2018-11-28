@@ -67,5 +67,23 @@ class cetakModel extends CI_Model{
 		$this->db->update('transaksi', $data);
 		redirect('belumCetak');
 	}
+	public function warna(){
+		$sql = sprintf("SELECT * FROM warna");
+		$warna=$this->db->query($sql);
+//		$data=$this->db->get('cetak');
+    	return $warna->result_array();
+	}
+	public function kertas(){
+		$sql = sprintf("SELECT * FROM kertas");
+		$kertas=$this->db->query($sql);
+//		$data=$this->db->get('cetak');
+    	return $kertas->result_array();
+	}
+	public function finishing(){
+		$sql = sprintf("SELECT * FROM finishing");
+		$finishing=$this->db->query($sql);
+//		$data=$this->db->get('cetak');
+    	return $finishing->result_array();
+	}
 }
 ?>

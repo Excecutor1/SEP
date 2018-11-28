@@ -241,15 +241,15 @@
                         <tbody>
                           <?php foreach($hasil as $row){ ?>
                           <tr class="even pointer">
-                  <?php $this->id = $row['id_transaksi'];?>
-                  <td><?php echo $row['id_transaksi']; ?></td>
-                  <td><?php echo $row['nama_pengguna']; ?></td>
-                  <td><a href="#">detail</a></td>
-                  <td><?php echo $row['id_status']; ?></td>
-                  <td>Harga Total</td>
-                  <td><button class="btn btn-primary btn-round"><?php echo "<a style='color:white' href='belumCetak/lihatFile/".$this->id."'>Cetak</a>"?></button>
-                  <button class="btn btn-success btn-round"><?php echo "<a style='color:white' href='belumCetak/selesaiCetak/".$this->id."'>Selesai</a>"?></button>
-                  </td>
+                            <?php $this->id = $row['id_transaksi'];?>
+                                <td><?php echo $row['id_transaksi']; ?></td>
+                                <td><?php echo $row['nama_pengguna']; ?></td>
+                                <td><a href="#">detail</a></td>
+                                <td><?php echo $row['id_status']; ?></td>
+                                <td>Harga Total</td>
+                                <td><button class="btn btn-primary btn-round"><?php echo "<a style='color:white' href='belumCetak/lihatFile/".$this->id."'>Cetak</a>"?></button>
+                                    <button class="btn btn-success btn-round"><?php echo "<a style='color:white' href='belumCetak/selesaiCetak/".$this->id."'>Selesai</a>"?></button>
+                                </td>
                           </tr>
                           <?php }; ?>
                         </tbody>

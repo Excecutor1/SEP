@@ -299,7 +299,7 @@ http://www.tooplate.com/view/2078-adventure
 					<h1 class="heading">OUR TEAM</h1>
 					<hr>
 					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
-					<button><a href="cetak2"> cetak </a></button>
+					<button onclick="window.location.href='mulaiCetak'">CETAK</button>
 				</div>
 			</div>
 
