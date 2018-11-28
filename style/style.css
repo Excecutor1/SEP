@@ -4130,3 +4130,9 @@ div#sparklinedask2, div#sparklinedask1 {
 .karyawan-top{
     background: linear-gradient(to right, #1a3fa4 0%, #c7babf 100%)
 }
+.mg-t-baru {
+    margin-top: 5%;
+}
+.mg-b-baru{
+    margin-bottom: 2%;
+}

@@ -46,14 +46,7 @@
     <!-- modernizr JS
         ============================================ -->
     <script src="style/js/vendor/modernizr-2.8.3.min.js"></script>
-    <style type="text/css">
-      .tengah1 {
-        margin-top: 90px;
-    }
-    .tengah2{
-      margin-top: 40px;
-    }
-    </style>
+
 </head>
 
 <body class="materialdesign">
@@ -68,18 +61,18 @@
 
    
             <!-- login Start-->
-    <div class="login-form-area mg-t-30 mg-b-40 tengah1">
+    <div class="login-form-area mg-t-baru mg-b-baru">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4"></div>
                             <form role="form" action="daftar" method="POST">
                             <div class="col-lg-4">
-                                <div class="login-bg">
-                                    <div class="row">
+                                <div class="login-bg" style="padding: 0px">
+                                    <!-- <div class="row"> -->
                                         <div class="karyawan-top">
                                     <p class="text-center" style="text-align: center;"><strong style="font-size: 35px; color: white;">Tambah Karyawan</strong> </p>
                                 </div>
-                                    </div>
+                                    <!-- </div> -->
                                     
                                     <div class="row">
                                       <!-- <div class="col-lg-12"> -->
@@ -135,7 +128,7 @@
                                             <div class="login-button-pro" style="text-align: center">
                                                 
                                                 <input type="submit" class="login-button login-button-lg" name="btn_log" value="Tambahkan"/>
-                                                <a style="color: red" href="karyawan">Batal</a>
+                                                <a style="color: #888; margin-left: 15%" href="karyawan">Batal</a>
                                                
                                             </div>
                                         </div>
@@ -150,7 +143,7 @@
                     </div>
                     
                     <div class="row tengah2">
-                      <div class="col-xs-4 center-block" style="float: none;">
+                      <div class="col-xs-4 center-block" style="float: none; padding-top: 2%">
                         <p style="text-align: center;">Copyright &#169; 2018 SEP</p>
                       </div>
                   </div>

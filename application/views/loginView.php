@@ -46,14 +46,7 @@
     <!-- modernizr JS
         ============================================ -->
     <script src="style/js/vendor/modernizr-2.8.3.min.js"></script>
-    <style type="text/css">
-      .tengah1 {
-        margin-top: 90px;
-    }
-    .tengah2{
-      margin-top: 40px;
-    }
-    </style>
+
 </head>
 
 <body class="materialdesign">
@@ -68,7 +61,7 @@
 
    
             <!-- login Start-->
-    <div class="login-form-area mg-t-30 mg-b-40 tengah1">
+    <div class="login-form-area mg-t-baru mg-b-baru">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4"></div>
@@ -122,7 +115,7 @@
                                             <div class="login-button-pro" style="text-align: center; padding: 0px; padding-bottom: 10%;">
                                                 <input type="submit" class="login-button login-button-lg" name="btn_log" value="Masuk"/>
                                             </div>
-                                            <a style="text-align: center;" href="home">Kembali ke Beranda</a>
+                                            <a style="text-align: center; color: #888" href="home">Kembali ke Beranda</a>
                                         </div>
                                         <!-- <div class="col-xs-3"> </div> -->
                                     </div>
@@ -135,7 +128,7 @@
                     </div>
                     
                     <div class="row tengah2">
-                      <div class="col-xs-4 center-block" style="float: none;">
+                      <div class="col-xs-4 center-block" style="float: none; padding-top: 2%">
                         <p style="text-align: center;">Copyright &#169; 2018 SEP</p>
                       </div>
                   </div>
