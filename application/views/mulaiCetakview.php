@@ -79,7 +79,7 @@ http://www.tooplate.com/view/2078-adventure
 
 
         
-        <section id="about" class="parallax-section " style="padding-top: 6.8%; padding-bottom: 8%;">
+        <section id="about" class="parallax-section " style="padding-top: 6.8%; padding-bottom: 8%; padding-right: 7em">
   <div class="container">
     <div class="row">
 
@@ -96,14 +96,14 @@ http://www.tooplate.com/view/2078-adventure
                     <div class="row">
                         <div class="col-xs-6"></div>
                             
-                            <div class="col-lg-6">
-                                <div class="login-bg">            
+                            <div class="col-lg-6" style="padding-left: 10%">
+                                <div class="login-bg" style="width: 127%;">            
                                 <div class="form-group-inner">
                           <p class="message-mg-rt "><strong>Upload File</strong> </p>
                     <div>
                         <?php echo $error;?>
                        <?php echo form_open_multipart('mulaiCetak/do_upload');?>
-                        <div class="login-bg" style="color: black; padding-bottom: 10px">
+                        <div class="login-bg" style="color: black; padding-bottom: 10px; padding-left: initial;">
                           <div class="form-group-inner">
                             <div class="row">
                           <div class="col-xs-9"><input type="file" name="userfile" size="20" /></div>
