@@ -93,41 +93,31 @@ http://www.tooplate.com/view/2078-adventure
             <!-- login Start-->
     <div class="login-form-area mg-t-baru mg-b-baru">
                 <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <div class="login-bg">
-                        <?php echo $error;?>
-
-<?php echo form_open_multipart('mulaiCetak/do_upload');?>
-
-<input type="file" name="userfile" size="20" />
-
-<br /><br />
-
-<input type="submit" value="upload" />
-
-</form>
-                      </div>
-                    </div>
-                  </div>
                     <div class="row">
                         <div class="col-xs-6"></div>
-                            <form role="form" action="mulaiCetak/upload" method="POST">
+                            
                             <div class="col-lg-6">
-                                <div class="login-bg">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            
-                                        </div>
-                                    </div>
-                                   
+                                <div class="login-bg">            
+                                <div class="form-group-inner">
+                          <p class="message-mg-rt "><strong>Upload File</strong> </p>
+                    <div>
+                        <?php echo $error;?>
+                       <?php echo form_open_multipart('mulaiCetak/do_upload');?>
+                        <div class="login-bg" style="color: black; padding-bottom: 10px">
+                          <div class="form-group-inner">
+                            <div class="row">
+                          <div class="col-xs-9"><input type="file" name="userfile" size="20" /></div>
+                          <div class="col-xs-2"><input type="submit" value="upload" /></div>
+                          
+                        </div>
+                      </div>  
+                      </div>
+                        </form>
+                    </div>
+                                </div>                       
+                                <form role="form" action="mulaiCetak/upload" method="POST">
                                     <div class="form-group-inner">
-                                     
-                                    <span class="adminpro-icon adminpro-checked-pro admin-check-pro admin-check-pro-none"></span>
                                     <p class="message-mg-rt "><strong>Pengaturan File</strong> </p>
-                                
-
-                                   
                                     <div class="row">
                                       <!-- <div class="col-lg-12"> -->
 
