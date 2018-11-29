@@ -108,7 +108,8 @@ http://www.tooplate.com/view/2078-adventure
                             <div class="row">
                           <div class="col-xs-9"><input type="file" name="userfile" size="20" /></div>
                           <div class="col-xs-2"><input type="submit" value="upload" /></div>
-                          
+                          <?php echo $namaFile;?>
+
                         </div>
                       </div>  
                       </div>
