@@ -1,21 +1,19 @@
 <?php
-class mulaiCetak extends CI_Controller{
 
-	public function __construct(){
-    	    parent::__construct();
-        	$this->load->library('session');
-        	$this->load->helper('url');
-            $this->load->model('cetakModel');
-            $this->load->helper(array('form', 'url'));
-    	}
-	public function index(){
-		$this->data['warna']=$this->cetakModel->warna();
-		$this->data['kertas']=$this->cetakModel->kertas();
-		$this->data['finishing']=$this->cetakModel->finishing();
-		$this->load->view('mulaiCetakview', array('error' => ' ' ), $this->data);//file view
-	}
+class Upload extends CI_Controller {
 
-	 public function do_upload()
+        public function __construct()
+        {
+                parent::__construct();
+                $this->load->helper(array('form', 'url'));
+        }
+
+        public function index()
+        {
+                $this->load->view('upload_form', array('error' => ' ' ));
+        }
+
+        public function do_upload()
         {
                 $config['upload_path']          = 'file/';
                 $config['allowed_types']        = 'doc|docx|pdf';
