@@ -85,5 +85,11 @@ class cetakModel extends CI_Model{
 //		$data=$this->db->get('cetak');
     	return $finishing->result_array();
 	}
+	public function upload($nama){
+		$data = array(
+        'berkas' => $nama,
+    	);
+		$this->db->insert('berkas',$data);
+	}
 }
 ?>

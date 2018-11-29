@@ -19,7 +19,6 @@ class mulaiCetak extends CI_Controller{
 		$this->data['finishing']=$this->cetakModel->finishing();
 		$this->data['namaFile'] = $this->session->userdata('namaFile');
 		$this->data['error'] = $this->session->userdata('status');
-
 		$this->load->view('mulaiCetakview', $this->data);//file view
 	}
 
@@ -32,7 +31,9 @@ class mulaiCetak extends CI_Controller{
                 }
                 else
                 {       
-                		$this->session->set_userdata('namaFile', $this->upload->data('file_name'));
+                        $nama = $this->upload->data('file_name');
+                        $this->cetakModel->upload($nama);
+                		$this->session->set_userdata('namaFile', $nama);
                         $this->session->set_userdata('status', 'File berhasil di Upload');
                         redirect('mulaiCetak');
                 }

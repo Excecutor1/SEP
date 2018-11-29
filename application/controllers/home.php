@@ -14,9 +14,8 @@ class home extends CI_Controller{
         }else{
             $this->online = 0;
         }
-        if($this->session->has_userdata('namaFile')){
             $this->session->set_userdata('namaFile', null);
-        }
+            $this->session->set_userdata('status', null);
 		$this->load->view("homeView",$this->online);
     }
 }
