@@ -108,10 +108,13 @@ http://www.tooplate.com/view/2078-adventure
                             <div class="row">
                           <div class="col-xs-9"><input type="file" name="userfile" size="20" /></div>
                           <div class="col-xs-2"><input type="submit" value="upload" /></div>
-                          <?php echo $namaFile;?>
-
                         </div>
-                      </div>  
+                          <div class="row">
+                            <i class="fa fa-check" style="margin-left: 13px"> </i> <?php echo $error ?>
+                            <br>
+                            <i class="fa fa-check" style="margin-left: 13px"> </i> <?php echo $namaFile;?>
+                          </div>
+                        </div>  
                       </div>
                         </form>
                     </div>
