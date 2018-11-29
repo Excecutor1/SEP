@@ -193,28 +193,21 @@ http://www.tooplate.com/view/2078-adventure
 				</div>
 			</div>
 
-			<div class="col-md-6 col-sm-12">
-				<h3 class="color-white">OUR STORY</h3>
-				<h2>ADVENTURE STUDIO</h2>
-				<p class="color-white">Adventure is free Bootstrap theme by <a rel="nofollow" href="http://www.tooplate.com" target="_parent">tooplate</a>. Download, edit, and use this layout for your website. Feel free to modify or remove anything to meet your desire. Excepteu sunt in culpa qui officia deserunt mollit.</p>
-				<p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
-			</div>
-
-			<div class="col-md-6 col-sm-12">
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 				<h2 class="mobile-top">WHY CHOOSE US?</h2>
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
   					<div class="panel panel-default">
-   						<div class="panel-heading" role="tab" id="headingOne">
+   						<div class="panel-heading" role="tab" id="headingTwo">
       						<h4 class="panel-title">
         						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          							Very Fast Response
+          							Very Fast Respon
         						</a>
       						</h4>
     					</div>
-   						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+   						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       						<div class="panel-body">
-        						<p>Phasellus odio lacus, posuere vel sodales a, facilisis vitae ligula. Pellentesque leo ligula, lobortis ut sapien blandit, convallis pulvinar nisi. Proin tempor congue nibh. Nam non maximus metus, nec tincidunt nulla.</p>
+        						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
       						</div>
    						 </div>
  					 </div>
@@ -253,9 +246,11 @@ http://www.tooplate.com/view/2078-adventure
 			</div>
 
 			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="section-title">
 				<div class="about-fact border-right">
 					<span>32</span>
 					<h4>TOURS</h4>
+				</div>
 				</div>
 			</div>
 

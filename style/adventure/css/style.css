@@ -78,6 +78,7 @@ hr {
 ------------------------------------- */
 .section-title {
   border: 4px solid #000;
+  background-color: #000000c7;
   padding: 50px;
   position: relative;
   text-align: center;
@@ -89,7 +90,7 @@ hr {
 }
 
 .panel {
-	background-color: #161616;
+	background-color: #00000069;
 	border: 0px;
 }
 
@@ -397,6 +398,7 @@ hr {
 }
 
 #about .panel-title > a {
+  background-color: #000000c7;
   text-decoration: none;
   display: block;
   width: 100%;
@@ -405,6 +407,7 @@ hr {
 
 #about .about-fact {
   margin-top: 82px;
+  color: black;
   text-align: center;
   position: relative;
   display: block;
@@ -412,6 +415,7 @@ hr {
 
 #about .border-right {
    border-right: 2px solid rgba(250,250,250,0.8);
+   color: black;
 }
 
 
