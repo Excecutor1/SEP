@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Login Admin SEP</title>
+    <title>Daftar Pengguna</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -65,34 +65,48 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4"></div>
-                            <form role="form" action="login" method="POST">
+                            <form role="form" action="daftar" method="POST">
                             <div class="col-lg-4">
-                                <div class="login-bg">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="logo">
-                                                <a href="#"><img style="max-width: 200px" src="style/img/logo_sep.png" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="login-title">
-                                                 
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="login-bg" style="padding: 0px">
+                                    <!-- <div class="row"> -->
+                                        <div class="karyawan-top">
+                                    <p class="text-center" style="text-align: center;"><strong style="font-size: 35px; color: white;">Daftar</strong> </p>
+                                </div>
+                                    <!-- </div> -->
+                                    
                                     <div class="row">
                                       <!-- <div class="col-lg-12"> -->
                                       
+                                        <div class="col-xs-8 center-block" style="float: none;">
+                                            <div class="login-input-area" style="text-align: center">
+                                                <input placeholder="Nama Lengkap" name="namaLengkap" type="text" autofocus/>
+                                                <i class="fa fa-user login-user" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
                                         <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
                                                 <input placeholder="Nama Pengguna" name="namaPengguna" type="text" autofocus/>
                                                 <i class="fa fa-user login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
-                                        
+                                        <div class="col-xs-8 center-block" style="float: none;">
+                                            <div class="login-input-area" style="text-align: center">
+                                                <input placeholder="Email" name="email" type="email" autofocus/>
+                                                <i class="fa fa-envelope login-user" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                         <div class="col-xs-8 center-block" style="float: none;">
+                                            <div class="login-input-area" style="text-align: center">
+                                                <input placeholder="Alamat" name="alamat" type="text" autofocus/>
+                                                <i class="fa fa-map-marker login-user" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                         <div class="col-xs-8 center-block" style="float: none;">
+                                            <div class="login-input-area" style="text-align: center">
+                                                <input placeholder="No Telepon" name="noTlp" type="text" autofocus/>
+                                                <i class="fa fa-phone login-user" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                       
@@ -102,7 +116,6 @@
                                                 <i class="fa fa-lock login-user"></i>
                                             </div>
                                             <div>
-                                              <p style="color:red"><?php echo $model->notif;?></p>
                                             </div>
                                         
                                         </div>
@@ -112,12 +125,12 @@
                                     <div class="row">
                                       <!-- <div class="col-xs-3"> </div> -->
                                         <div class="col-xs-8 center-block" style="float:none">
-                                            <div class="login-button-pro" style="text-align: center; padding: 0px; padding-bottom: 10%;">
-                                                <input type="submit" class="login-button login-button-lg" name="btn_log" value="Masuk"/>
-                                                <a href="daftarPengguna">Daftar</a>
+                                            <div class="login-button-pro" style="text-align: center">
+                                                
+                                                <input type="submit" class="login-button login-button-lg" name="btn_log" value="Tambahkan"/>
+                                                <a style="color: #888; margin-left: 15%" href="karyawan">Batal</a>
+                                               
                                             </div>
-
-                                            <a style="text-align: center; color: #888" href="home">Kembali ke Beranda</a>
                                         </div>
                                         <!-- <div class="col-xs-3"> </div> -->
                                     </div>
