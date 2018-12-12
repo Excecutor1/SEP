@@ -65,7 +65,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4"></div>
-                            <form role="form" action="daftar" method="POST">
+                            <form role="form" action="daftarPengguna" method="POST">
                             <div class="col-lg-4">
                                 <div class="login-bg" style="padding: 0px">
                                     <!-- <div class="row"> -->
