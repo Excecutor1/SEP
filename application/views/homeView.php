@@ -85,7 +85,7 @@ http://www.tooplate.com/view/2078-adventure
             <ul class="nav navbar-nav navbar-right">
             
                 <!-- <li><a href="#home" class="smoothScroll">HOME</a></li> -->
-                
+                <li><a href="cekData">cek data</a></li>
                 <li><a href="#work" class="smoothScroll">BERANDA</a></li>
                 <li><a href="#about" class="smoothScroll">TENTANG</a></li>
                 <li><a href="#team" class="smoothScroll">CETAK</a></li>
@@ -294,7 +294,7 @@ http://www.tooplate.com/view/2078-adventure
 					<h1 class="heading">OUR TEAM</h1>
 					<hr>
 					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
-					<button onclick="window.location.href='mulaiCetak'">CETAK</button>
+					<button onclick="window.location.href='uploadFile'">CETAK</button>
 				</div>
 			</div>
 

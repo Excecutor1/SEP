@@ -21,6 +21,12 @@ class loginModel extends CI_Model{
 		return $row['NAMA_PENGGUNA'] == 1;
 		}
 
+	public function getId(){
+		$sql = sprintf("SELECT id_pengguna FROM pengguna WHERE nama_pengguna = '".$this->namaPengguna."'");
+		$query = $this->db->query($sql);
+		return $query->result_array();
+	}
+
 	public function cek_level(){
 		$sql = sprintf("SELECT ID_LEVEL FROM pengguna WHERE NAMA_PENGGUNA='%s'",$this->namaPengguna);
 		$query = $this->db->query($sql);
