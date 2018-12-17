@@ -9,7 +9,7 @@ class cekData extends CI_Controller{
 	}
 
 	public function index (){
-		$a=$this->session->userdata('id_pengguna');
+		$a=$this->session->userdata('id_berkas');
 		// $s="asdf";
 		$data = array('hasil' => $a);
 		$this->load->view('cekDataview', $data);
