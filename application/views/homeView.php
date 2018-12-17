@@ -109,13 +109,13 @@ http://www.tooplate.com/view/2078-adventure
 <!-- Homepage section
 ================================================== -->
 <div id="home">
-	<div class="site-slider">
-        <img src="style/adventure/images/slider/slide1.jpg" alt="slider image 1">
+	<div class="site-slider" >
+        <img class="img-responsive" src="style/adventure/images/W.jpg" ">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="slider-caption">
-                                <h2>Selamat Datang di Percetakan SEP 3</h2>
+                                <h2 style="font-size:4vw;">Selamat Datang di Percetakan SEP 3</h2>
 
                                 <p class="color-white">Keep calm and Stay Woles.</p>
                             </div>
@@ -136,11 +136,11 @@ http://www.tooplate.com/view/2078-adventure
 			================================================== -->
 
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-				<div class="section-title">
+				<div class="section-title" >
 					<h5 class="wow bounceIn">SEP Online</h5>
-					<h1 class="heading">Apa yang bisa anda lakukan di sini?</h1>
+					<h1 class="color-white" >Apa yang bisa anda lakukan di sini?</h1>
 					<hr>
-					<p>Cetak semua dokumen anda secara online tanpa mengantri dengan semua fasilitas yang ada di SEP (Setengah Enam Pagi)</p>
+					<p class="color-white">Cetak semua dokumen anda secara online tanpa mengantri dengan semua fasilitas yang ada di SEP (Setengah Enam Pagi)</p>
 				</div>
 			</div>
 
@@ -150,23 +150,23 @@ http://www.tooplate.com/view/2078-adventure
 			<div id="owl-work" class="owl-carousel">
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-					<i class="fa fa-print" style="font-size:48px"></i>
+					<i style="color: black" class="fa fa-print fa-3x"></i>
 						<h3>CETAK PAPER</h3>
-						<hr>
+						
 						<p>Cetak Dokumen anda secara online disini</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-					<i class="icon-tablet" style="font-size:46px"></i>
+					<i style="color: black" class="icon-tablet fa-3x"></i>
 						<h3>FINISHING</h3>
-						<hr>
+						
 						<p>Pilih segala bentuk finishing yang tersedia sesuai dengan keinginan</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<i class="fa fa-money" style="font-size:46px"></i>
+					<i style="color: black" class="fa fa-money fa-3x"></i>
 						<h3>CEK HARGA</h3>
-						<hr>
+						
 						<p>Cek Harga semua layanan di SEP dan sesuaikan dengan kebutuhan</p>
 				</div>
 			</div>
@@ -187,7 +187,7 @@ http://www.tooplate.com/view/2078-adventure
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 				<div class="section-title">
 					<h5 class="wow bounceIn">Setengah Enam Pagi</h5>
-					<h1 class="heading color-white">Apa Itu SEP?</h1>
+					<h1 class="color-white">Apa Itu SEP?</h1>
 					<hr>
 					<p class="color-white">SEP adalah...</p>
 				</div>
@@ -245,36 +245,6 @@ http://www.tooplate.com/view/2078-adventure
  				 </div>
 			</div>
 
-			<div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="section-title">
-				<div class="about-fact border-right">
-					<span>32</span>
-					<h4>TOURS</h4>
-				</div>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="about-fact border-right">
-					<span>16</span>
-					<h4>AWARDS</h4>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="about-fact border-right">
-					<span>128</span>
-					<h4>TRIPS</h4>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="about-fact">
-					<span>24</span>
-					<h4>PLANS</h4>
-				</div>
-			</div>
-
 		</div>
 	</div>
 </section>
@@ -291,10 +261,10 @@ http://www.tooplate.com/view/2078-adventure
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 				<div class="section-title">
 					<h5 class="wow bounceIn">WE ARE READY</h5>
-					<h1 class="heading">OUR TEAM</h1>
+					<h1 class="color-white">OUR TEAM</h1>
 					<hr>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
-					<button onclick="window.location.href='uploadFile'">CETAK</button>
+					<p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
+					<button onclick="window.location.href='uploadFile'" class="btn-primary">Cetak</button>
 				</div>
 			</div>
 
@@ -365,7 +335,7 @@ http://www.tooplate.com/view/2078-adventure
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
 				<div class="section-title">
 					<h5 class="wow bounceIn">Temukan kenyamananmu</h5>
-					<h1 class="heading color-white">HARGA</h1>
+					<h1 class="color-white">HARGA</h1>
 					<hr>
 					<p class="color-white">SEP (Setengah Enam Pagi) Menawarkan kualitas bahan yang baik dengan harga yang terjangkau.</p>
 				</div>

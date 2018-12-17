@@ -623,6 +623,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 #plan .plan {
+  background-color: #000000c7;
   border: 4px solid #ffffff;
   padding: 40px;
   transition: all 0.4s linear;
@@ -842,6 +843,7 @@ footer h2 {
     padding-top: 50px;
   }
   #plan .plan {
+    background-color: #000000c7;
     padding-right: 0;
     margin: 54px auto 54px auto;
     width: 360px;
