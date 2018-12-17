@@ -55,7 +55,15 @@
         <![endif]-->
     <!-- Header top area start-->
 
-
+<script>
+        function hanyaAngka(evt) {
+          var charCode = (evt.which) ? evt.which : event.keyCode
+           if (charCode > 31 && (charCode < 48 || charCode > 57))
+ 
+            return false;
+          return true;
+        }
+    </script>
 
     <div class="wrapper-pro">
 
@@ -72,6 +80,7 @@
                                         <div class="karyawan-top">
                                     <p class="text-center" style="text-align: center;"><strong style="font-size: 35px; color: white;">Daftar</strong> </p>
                                 </div>
+                                <br>
                                     <!-- </div> -->
                                     
                                     <div class="row">
@@ -79,31 +88,31 @@
                                       
                                         <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
-                                                <input placeholder="Nama Lengkap" name="namaLengkap" type="text" autofocus/>
+                                                <input placeholder="Nama Lengkap" name="namaLengkap" type="text" required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" autofocus/>
                                                 <i class="fa fa-user login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                         <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
-                                                <input placeholder="Nama Pengguna" name="namaPengguna" type="text" autofocus/>
+                                                <input placeholder="Nama Pengguna" name="namaPengguna" type="text" required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" autofocus/>
                                                 <i class="fa fa-user login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                         <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
-                                                <input placeholder="Email" name="email" type="email" autofocus/>
+                                                <input placeholder="Email" name="email" type="email" required="" oninvalid="this.setCustomValidity('Format Email Salah')" autofocus/>
                                                 <i class="fa fa-envelope login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                          <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
-                                                <input placeholder="Alamat" name="alamat" type="text" autofocus/>
+                                                <input placeholder="Alamat" name="alamat" type="text" required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" autofocus/>
                                                 <i class="fa fa-map-marker login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                          <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
-                                                <input placeholder="No Telepon" name="noTlp" type="text" autofocus/>
+                                                <input placeholder="No Telepon" name="noTlp" onkeypress="return hanyaAngka(event)" type="text" required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" autofocus/>
                                                 <i class="fa fa-phone login-user" aria-hidden="true"></i>
                                             </div>
                                         </div>
@@ -112,7 +121,7 @@
                                       
                                         <div class="col-xs-8 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
-                                                <input placeholder="Kata Sandi" name="kataSandi" type="password" value=""/>
+                                                <input placeholder="Kata Sandi" name="kataSandi" type="password" required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" value=""/>
                                                 <i class="fa fa-lock login-user"></i>
                                             </div>
                                             <div>
@@ -128,7 +137,7 @@
                                             <div class="login-button-pro" style="text-align: center">
                                                 
                                                 <input type="submit" class="login-button login-button-lg" name="btn_log" value="Tambahkan"/>
-                                                <a style="color: #888; margin-left: 15%" href="karyawan">Batal</a>
+                                                <a style="color: #888; margin-left: 10%" href="login">Batal</a>
                                                
                                             </div>
                                         </div>
@@ -137,11 +146,9 @@
                                 </div>
                             </div>
                         </form>
+                     </div>
 
-                        
-                        
-                    </div>
-                    
+                   
                     <div class="row tengah2">
                       <div class="col-xs-4 center-block" style="float: none; padding-top: 2%">
                         <p style="text-align: center;">Copyright &#169; 2018 SEP</p>
