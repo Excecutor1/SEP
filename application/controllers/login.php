@@ -18,14 +18,16 @@ class login extends CI_Controller{
 				$this->session->set_userdata('namaPengguna', $this->model->namaPengguna);
 				$this->session->set_userdata('level', "1");
 				$id_pengguna = $this->model->getId();
-				$this->session->set_userdata('id_pengguna', $id_pengguna);
+				$data = print_r($id_pengguna['0']);
+				$this->session->set_userdata('id_pengguna', $data);
 				redirect('admin');
 			}
 			elseif (($this->model->cek_log()==TRUE)&&($this->model->cek_level()==2)) {
 				$this->session->set_userdata('namaPengguna', $this->model->namaPengguna);
 				$this->session->set_userdata('level', "2");
 				$id_pengguna = $this->model->getId();
-				$this->session->set_userdata('id_pengguna', $id_pengguna['0']);
+				$data = print_r($id_pengguna['0']);
+				$this->session->set_userdata('id_pengguna', $data);
 				redirect('home');
 			}else{
 				$this->model->notif = "Nama Pengguna dan Kata Sandi yang anda masukkan salah";

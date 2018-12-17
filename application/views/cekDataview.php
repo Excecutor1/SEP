@@ -1,3 +1,9 @@
-<?php foreach ($hasil as $row){ ?>
-    id pengguna <?php echo $row['id_pengguna'] ?>
-<?php } ?>
+<?php
+if (is_array($hasil) || is_object($hasil))
+{
+    foreach ($hasil as $row)
+    {
+        echo  "aerger".$row['id_berkas'];
+    }
+}
+?>

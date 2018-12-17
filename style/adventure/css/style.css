@@ -353,6 +353,13 @@ hr {
 
 /* work section styles
 /* ========================================== */
+#work {
+  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
 #work .col-md-4 {
   display: block;
   width: 100%;
@@ -422,7 +429,11 @@ hr {
 /* team section styles
 /* ========================================== */
 #team {
-  background: #f2f2f2;
+  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
 }
 
 #team h3 {
@@ -452,6 +463,13 @@ hr {
 
 /* portfolio section styles
 /* ========================================== */
+#portofolio {
+  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
 #portfolio .col-md-4 {
   padding: 12px;
 }
@@ -597,7 +615,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 /* plan section styles
 /* ========================================== */
 #plan {
-  background: url('../images/plan-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
