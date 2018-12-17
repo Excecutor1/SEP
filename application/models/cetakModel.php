@@ -5,28 +5,12 @@ class cetakModel extends CI_Model{
 		parent::__construct();
 		$this->load->database();
 	}
-/*	public function belumCetak(){
-		$sql = sprintf("SELECT * FROM cetak JOIN finishing JOIN pengguna JOIN tinta JOIN status JOIN kertas WHERE cetak.ID_Finishing = finishing.Id_finishing AND cetak.ID_PENGGUNA = pengguna.ID_PENGGUNA AND cetak.ID_warna = warna.ID_warna AND cetak.ID_KERTAS = kertas.ID_KERTAS AND ORDER BY cetak.ID_CETAK DESC");
-		$data=$this->db->query($sql);
-//		$data=$this->db->get('cetak');
-    	return $data->result_array();
-	}
-*/
-
 	public function belumCetak(){
 		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status WHERE transaksi.ID_PENGGUNA = pengguna.ID_PENGGUNA AND transaksi.id_admin = admin_online.ID_PENGGUNA AND transaksi.ID_STATUS = status.ID_STATUS AND transaksi.ID_STATUS = 1 ORDER BY transaksi.ID_transaksi DESC");
 		$data=$this->db->query($sql);
 //		$data=$this->db->get('cetak');
     	return $data->result_array();
     }
-
-/*	public function sudahCetak(){
-		$sql = sprintf("SELECT * FROM cetak JOIN layanan JOIN pengguna JOIN tinta JOIN status JOIN kertas WHERE cetak.ID_LAYANAN = layanan.ID_LAYANAN AND cetak.ID_PENGGUNA = pengguna.ID_PENGGUNA AND cetak.ID_TINTA = tinta.ID_TINTA AND cetak.ID_STATUS = status.ID_STATUS AND cetak.ID_KERTAS = kertas.ID_KERTAS AND cetak.ID_STATUS = 2");
-		$data=$this->db->query($sql);
-//		$data=$this->db->get('cetak');
-    	return $data->result_array();
-	}
-*/
 	public function sudahCetak(){
 		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status WHERE transaksi.ID_PENGGUNA = pengguna.ID_PENGGUNA AND transaksi.id_admin = admin_online.ID_PENGGUNA AND transaksi.ID_STATUS = status.ID_STATUS AND transaksi.ID_STATUS = 2");
 		$data=$this->db->query($sql);
@@ -90,6 +74,13 @@ class cetakModel extends CI_Model{
         'berkas' => $nama,
     	);
 		$this->db->insert('berkas',$data);
+		$lastID = $this->db->insert_id();
+	}
+	public function simpanCetak($data){
+		$this->db->query("INSERT INTO transaksi (id_pengguna) VALUES ('".$data['id_pengguna']."')");
+		$id_transaksi = $this->db->insert_id();
+		$this->db->query("INSERT INTO cetak (id_transaksi,id_berkas,id_kertas,id_warna,id_finishing,salinan,keterangan)
+						VALUES ('".$id_transaksi."','".$data['id_berkas']."','".$data['id_kertas']."','".$data['id_warna']."','".$data['id_finishing']."','".$data['salinan']."','".$data['keterangan']."')");
 	}
 }
 ?>

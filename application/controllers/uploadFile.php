@@ -1,5 +1,5 @@
 <?php
-class mulaiCetak extends CI_Controller{
+class uploadFile extends CI_Controller{
 
 	public function __construct(){
     	    parent::__construct();
@@ -14,12 +14,9 @@ class mulaiCetak extends CI_Controller{
             $this->load->library('upload', $config);
     	}
 	public function index(){
-		$this->data['warna']=$this->cetakModel->warna();
-		$this->data['kertas']=$this->cetakModel->kertas();
-		$this->data['finishing']=$this->cetakModel->finishing();
 		$this->data['namaFile'] = $this->session->userdata('namaFile');
 		$this->data['error'] = $this->session->userdata('status');
-		$this->load->view('mulaiCetakview', $this->data);//file view
+		$this->load->view('uploadView', $this->data);//file view
 	}
 
 	 public function do_upload()
@@ -27,15 +24,15 @@ class mulaiCetak extends CI_Controller{
                 if ( ! $this->upload->do_upload('userfile'))
                 {
                         $this->session->set_userdata('status', $this->upload->display_errors());
-                        redirect('mulaiCetak');
+                        redirect('upload_file');
                 }
                 else
                 {       
                         $nama = $this->upload->data('file_name');
                         $this->cetakModel->upload($nama);
-                		$this->session->set_userdata('namaFile', $nama);
-                        $this->session->set_userdata('status', 'File berhasil di Upload');
-                        redirect('mulaiCetak');
+                		$this->session->set_userdata('namaFile', '<i class="fa fa-check" style="margin-left: 13px"> </i>'.$nama);
+                        $this->session->set_userdata('status', '<i class="fa fa-check" style="margin-left: 13px"> </i> File berhasil di Upload');
+                        redirect('pengaturanFile');
                 }
         }
 }
