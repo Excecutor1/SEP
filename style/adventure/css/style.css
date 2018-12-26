@@ -870,3 +870,14 @@ footer h2 {
     font-size: 11px;
   }
 }
+
+.stroke {
+   -webkit-text-stroke: 4px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
