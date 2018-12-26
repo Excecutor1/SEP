@@ -110,14 +110,14 @@ http://www.tooplate.com/view/2078-adventure
 ================================================== -->
 <div id="home">
 	<div class="site-slider" >
-        <img class="img-responsive" src="style/adventure/images/W.jpg" ">
+        <img class="img-responsive" src="style/adventure/images/picture.jpg" ">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="slider-caption">
-                                <h2 style="font-size:4vw; color: black">Selamat Datang di Percetakan SEP 3</h2>
+                                <h2 style="font-size:4vw; color: white">Selamat Datang di Percetakan SEP 3</h2>
 
-                                <p style="color: black">Keep calm and Stay Woles.</p>
+                                <p style="color: white">Keep calm and Stay Woles.</p>
                             </div>
                         </div>
                     </div>
