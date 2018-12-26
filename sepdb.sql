@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2018 at 01:54 AM
+-- Generation Time: Dec 26, 2018 at 01:05 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -47,9 +47,19 @@ INSERT INTO `admin_online` (`id_online`, `id_pengguna`) VALUES
 --
 
 CREATE TABLE `berkas` (
-  `id_berkas` varchar(6) NOT NULL,
+  `id_berkas` int(6) NOT NULL,
   `berkas` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `berkas`
+--
+
+INSERT INTO `berkas` (`id_berkas`, `berkas`) VALUES
+(40, 'Persiapan_'),
+(41, 'Persiapan_'),
+(42, 'Persiapan_'),
+(39, 'PLAN-06_PE');
 
 -- --------------------------------------------------------
 
@@ -59,14 +69,15 @@ CREATE TABLE `berkas` (
 
 CREATE TABLE `cetak` (
   `id_transaksi` int(11) NOT NULL,
-  `id_berkas` varchar(6) NOT NULL,
+  `id_berkas` int(6) NOT NULL,
   `id_kertas` varchar(6) NOT NULL,
   `id_warna` varchar(6) NOT NULL,
   `id_finishing` varchar(6) NOT NULL,
   `salinan` char(3) NOT NULL,
   `waktu_cetak` datetime NOT NULL,
   `waktu_proses` int(11) NOT NULL,
-  `harga` char(15) NOT NULL
+  `harga` char(15) NOT NULL,
+  `keterangan` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -179,20 +190,12 @@ INSERT INTO `status` (`id_status`, `status`) VALUES
 
 CREATE TABLE `transaksi` (
   `id_transaksi` int(11) NOT NULL,
-  `id_admin` int(11) NOT NULL,
+  `id_admin` int(11) DEFAULT NULL,
   `id_pengguna` int(11) NOT NULL,
-  `id_status` int(11) NOT NULL,
-  `waktu_selesai` int(11) NOT NULL,
-  `harga_total` char(20) NOT NULL
+  `id_status` int(11) NOT NULL DEFAULT '1',
+  `waktu_selesai` int(11) DEFAULT NULL,
+  `harga_total` char(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `transaksi`
---
-
-INSERT INTO `transaksi` (`id_transaksi`, `id_admin`, `id_pengguna`, `id_status`, `waktu_selesai`, `harga_total`) VALUES
-(1, 1, 2, 1, 8, '8000'),
-(2, 1, 2, 2, 6, '9000');
 
 -- --------------------------------------------------------
 
@@ -202,7 +205,7 @@ INSERT INTO `transaksi` (`id_transaksi`, `id_admin`, `id_pengguna`, `id_status`,
 
 CREATE TABLE `warna` (
   `id_warna` varchar(6) NOT NULL,
-  `warna` varchar(15) NOT NULL
+  `warna` varchar(24) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -211,7 +214,7 @@ CREATE TABLE `warna` (
 
 INSERT INTO `warna` (`id_warna`, `warna`) VALUES
 ('wrn1', 'Berwarna'),
-('wrn2', 'Hitam-puti');
+('wrn2', 'Hitam-putih');
 
 --
 -- Indexes for dumped tables
@@ -301,6 +304,12 @@ ALTER TABLE `admin_online`
   MODIFY `id_online` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `berkas`
+--
+ALTER TABLE `berkas`
+  MODIFY `id_berkas` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+
+--
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
@@ -310,7 +319,7 @@ ALTER TABLE `pengguna`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
@@ -327,10 +336,10 @@ ALTER TABLE `admin_online`
 --
 ALTER TABLE `cetak`
   ADD CONSTRAINT `cetak_ibfk_1` FOREIGN KEY (`id_warna`) REFERENCES `warna` (`id_warna`),
-  ADD CONSTRAINT `cetak_ibfk_2` FOREIGN KEY (`id_berkas`) REFERENCES `berkas` (`id_berkas`),
   ADD CONSTRAINT `cetak_ibfk_3` FOREIGN KEY (`id_kertas`) REFERENCES `kertas` (`id_kertas`),
   ADD CONSTRAINT `cetak_ibfk_4` FOREIGN KEY (`id_finishing`) REFERENCES `finishing` (`id_finishing`),
-  ADD CONSTRAINT `cetak_ibfk_5` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`);
+  ADD CONSTRAINT `cetak_ibfk_5` FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`),
+  ADD CONSTRAINT `cetak_ibfk_6` FOREIGN KEY (`id_berkas`) REFERENCES `berkas` (`id_berkas`);
 
 --
 -- Constraints for table `pengguna`
