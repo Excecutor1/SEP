@@ -115,9 +115,9 @@ http://www.tooplate.com/view/2078-adventure
                     <div class="row">
                         <div class="col-md-12">
                             <div class="slider-caption">
-                                <h2 style="font-size:4vw;">Selamat Datang di Percetakan SEP 3</h2>
+                                <h2 style="font-size:4vw; color: black">Selamat Datang di Percetakan SEP 3</h2>
 
-                                <p class="color-white">Keep calm and Stay Woles.</p>
+                                <p style="color: black">Keep calm and Stay Woles.</p>
                             </div>
                         </div>
                     </div>
@@ -194,7 +194,7 @@ http://www.tooplate.com/view/2078-adventure
 			</div>
 
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-				<h2 class="mobile-top">WHY CHOOSE US?</h2>
+				<h2 style="color: black">WHY CHOOSE US?</h2>
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
   					<div class="panel panel-default">
@@ -207,7 +207,7 @@ http://www.tooplate.com/view/2078-adventure
     					</div>
    						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       						<div class="panel-body">
-        						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
+        						<p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
       						</div>
    						 </div>
  					 </div>
@@ -222,7 +222,7 @@ http://www.tooplate.com/view/2078-adventure
     					</div>
    						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       						<div class="panel-body">
-        						<p>Nullam vehicula tincidunt ultrices. Curabitur id magna velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium tortor ultrices ligula dictum placerat. Donec eget augue sapien. Curabitur vel orci magna. Sed id eros consequat nibh congue euismod.</p>
+        						<p class="color-white">Nullam vehicula tincidunt ultrices. Curabitur id magna velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium tortor ultrices ligula dictum placerat. Donec eget augue sapien. Curabitur vel orci magna. Sed id eros consequat nibh congue euismod.</p>
       						</div>
    						 </div>
  					 </div>
@@ -237,7 +237,7 @@ http://www.tooplate.com/view/2078-adventure
     					</div>
    						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       						<div class="panel-body">
-        						<p>Morbi pellentesque nisl at sapien congue facilisis. Proin consequat pharetra hendrerit. Aliquam vulputate, ligula ut pellentesque molestie, dolor nisi semper augue, sit amet porta risus sem non sapien. Cras vel pulvinar sapien, in consequat purus. Aliquam at varius augue.</p>
+        						<p class="color-white">Morbi pellentesque nisl at sapien congue facilisis. Proin consequat pharetra hendrerit. Aliquam vulputate, ligula ut pellentesque molestie, dolor nisi semper augue, sit amet porta risus sem non sapien. Cras vel pulvinar sapien, in consequat purus. Aliquam at varius augue.</p>
       						</div>
    						 </div>
  					 </div>

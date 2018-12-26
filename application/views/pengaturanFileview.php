@@ -110,7 +110,7 @@
                                         </div>
                                         <div class="col-lg-9">
                                             <div class="form-select-list">
-                                                <select class="form-control custom-select-value" name="id_kertas">
+                                                <select required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" class="form-control custom-select-value" name="id_kertas">
                                                     <option value="0">Pilih</option>
                                                     <?php foreach($kertas as $row){
                                                         echo "<option value='".$row['id_kertas']."'>".$row['kertas']."</option>";}
@@ -131,7 +131,7 @@
                                         </div>
                                         <div class="col-lg-9">
                                             <div class="form-select-list">
-                                                <select class="form-control custom-select-value" name="id_finishing">
+                                                <select required="" class="form-control custom-select-value" name="id_finishing">
                                                     <option value="0">Pilih</option>
                                                         <?php foreach($finishing as $row){
                                                             echo "<option value='".$row['id_finishing']."'>".$row['finishing']."</option>";}
@@ -151,7 +151,7 @@
                                         </div>
                                         <div class="col-xs-4">
                                             <div class="form-select-list">
-                                                <input type="number" class="form-control" name="salinan" style="color: #000">
+                                                <input required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" type="number" class="form-control" name="salinan" style="color: #000">
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@
                                         </div>
                                         <div class="col-lg-9">
                                             <div class="form-select-list">
-                                                <input type="text" class="form-control" name="keterangan" style="height: 200px" placeholder="Contoh : Semua halaman | diprint hanya halaman 3 | di print hanya halaman 2 dan 3" style="color: #000">
+                                                <input required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" type="text" class="form-control" name="keterangan" style="height: 200px" placeholder="Contoh : Semua halaman | diprint hanya halaman 3 | di print hanya halaman 2 dan 3" style="color: #000">
                                             </div>
                                         </div>
                                     </div>
