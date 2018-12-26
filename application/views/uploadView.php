@@ -76,11 +76,15 @@
                                             <div class="row">
                                                 <div class="col-xs-9"><input type="file" name="userfile" size="20" /></div>
                                             </div>
+
                                             <div class="row">
                                                 <br>
                                                 <div class="col-xs-9"><input type="submit" value="upload" /></div>
                                             </div>
                                             <div class="row">
+
+                                                <br>
+                                                <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>format yang didukung: </strong>doc|docx|pdf|sls|slsx|ppt|pptx</p></div>
 
                                              <?php echo $error ?>
                                             <br>
