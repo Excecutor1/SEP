@@ -86,7 +86,7 @@
                                     <div class="row">
                                       <!-- <div class="col-lg-12"> -->
                                       
-                                        <div class="col-xs-8 center-block" style="float: none;">
+                                        <div class="col-xs-9 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
                                                 <input placeholder="Nama Pengguna" name="namaPengguna" type="text" autofocus/>
                                                 <i class="fa fa-user login-user" aria-hidden="true"></i>
@@ -96,7 +96,7 @@
                                     </div>
                                     <div class="row">
                                       
-                                        <div class="col-xs-8 center-block" style="float: none;">
+                                        <div class="col-xs-9 center-block" style="float: none;">
                                             <div class="login-input-area" style="text-align: center">
                                                 <input placeholder="Kata Sandi" name="kataSandi" type="password" value=""/>
                                                 <i class="fa fa-lock login-user"></i>
