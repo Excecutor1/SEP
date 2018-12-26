@@ -354,7 +354,7 @@ hr {
 /* work section styles
 /* ========================================== */
 #work {
-  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  background: #ebebeb; 
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -384,7 +384,7 @@ hr {
 /* about section styles
 /* ========================================== */
 #about {
-  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  background: #ebebeb; 
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -429,7 +429,7 @@ hr {
 /* team section styles
 /* ========================================== */
 #team {
-  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  background: #ebebeb; 
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -464,7 +464,7 @@ hr {
 /* portfolio section styles
 /* ========================================== */
 #portofolio {
-  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  background: #ebebeb;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -615,7 +615,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 /* plan section styles
 /* ========================================== */
 #plan {
-  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  background: #ebebeb;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
