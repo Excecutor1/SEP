@@ -29,13 +29,13 @@ class uploadFile extends CI_Controller{
                 else
                 {       
                         $nama = $this->upload->data('file_name');
-                        $this->cetakModel->upload($nama);
+                        $data = $this->cetakModel->upload($nama);
                         // $id_berkas = $this->cetakModel->upload->lastID;
                         // $data = print_r($id_berkas['0']);
                         // $this->set_userdata('id_berkas', $data);
-                        $lastID = $this->cetakModel->lastID();
-                        $data = print_r($lastID['0']);
-                		$this->set_userdata('id_berkas', $data);
+                        // $lastID = $this->cetakModel->lastID();
+                        // $data = print_r($lastID['0']);
+                		$this->session->set_userdata('id_berkas', $nama);
                         $this->session->set_userdata('namaFile', '<i class="fa fa-check" style="margin-left: 13px"> </i>  '.$nama);
                         $this->session->set_userdata('status', '<i class="fa fa-check" style="margin-left: 13px"> </i> File berhasil di Upload');
                         redirect('pengaturanFile');
