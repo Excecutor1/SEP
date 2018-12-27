@@ -77,11 +77,11 @@ class cetakModel extends CI_Model{
 		$lastID = $this->db->insert_id();
 		return $lastID;
 	}
-	//public function lastID(){
-	//	$query = $this->db->query('SELECT LAST_INSERT_ID()');
-	//	$data = $query->result_array();
-	//	return $data;
-	//}	
+	public function lastID(){
+		$sql = sprintf("SELECT * FROM berkas ORDER BY id_berkas DESC LIMIT 1");
+		$data=$this->db->query($sql);
+		return $data->result_array();
+	}	
 	public function simpanCetak($data){
 		$this->db->query("INSERT INTO transaksi (id_pengguna) VALUES ('".$data['id_pengguna']."')");
 		$id_transaksi = $this->db->insert_id();
