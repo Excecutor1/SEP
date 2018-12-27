@@ -84,7 +84,7 @@
                                             <div class="row">
 
                                                 <br>
-                                                <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>format yang didukung: </strong>doc|docx|pdf|sls|slsx|ppt|pptx</p></div>
+                                                <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>format yang didukung: </strong>doc|docx|pdf|xls|xlsx|ppt|pptx</p></div>
 
                                              <?php echo $error ?>
                                             <br>

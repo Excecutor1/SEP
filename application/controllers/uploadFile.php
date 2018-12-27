@@ -8,7 +8,7 @@ class uploadFile extends CI_Controller{
             $this->load->model('cetakModel');
             $this->load->helper(array('form', 'url'));
             $config['upload_path']          = 'file/';
-            $config['allowed_types']        = 'doc|docx|pdf|sls|slsx|ppt|pptx';
+            $config['allowed_types']        = 'doc|docx|pdf|xls|xlsx|ppt|pptx';
             $config['max_size']             = 1000;
 
             $this->load->library('upload', $config);
