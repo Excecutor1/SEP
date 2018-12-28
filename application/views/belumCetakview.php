@@ -324,9 +324,9 @@
                                                     </div>
                                                 </div>
                                             </di>
-</td>
+                                    </td>
                                
-                          </tr>
+                                 </tr>
                           <?php }; ?>
                         </tbody>
                       </table>
