@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2018 at 01:05 PM
+-- Generation Time: Dec 28, 2018 at 11:37 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -56,10 +56,14 @@ CREATE TABLE `berkas` (
 --
 
 INSERT INTO `berkas` (`id_berkas`, `berkas`) VALUES
-(40, 'Persiapan_'),
-(41, 'Persiapan_'),
-(42, 'Persiapan_'),
-(39, 'PLAN-06_PE');
+(91, 'Bab_2_Dasa'),
+(92, 'BAB_IV_pom'),
+(89, 'bu_maya_fi'),
+(90, 'Gambaran_S'),
+(85, 'Persiapan_'),
+(87, 'Persiapan_'),
+(86, 'PLAN-06_PE'),
+(88, 'PLAN-06_PE');
 
 -- --------------------------------------------------------
 
@@ -79,6 +83,18 @@ CREATE TABLE `cetak` (
   `harga` char(15) NOT NULL,
   `keterangan` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cetak`
+--
+
+INSERT INTO `cetak` (`id_transaksi`, `id_berkas`, `id_kertas`, `id_warna`, `id_finishing`, `salinan`, `waktu_cetak`, `waktu_proses`, `harga`, `keterangan`) VALUES
+(36, 85, 'kts01', 'wrn1', 'fin01', '1', '0000-00-00 00:00:00', 0, '', 'yugu'),
+(37, 86, 'kts01', 'wrn1', 'fin01', '1', '0000-00-00 00:00:00', 0, '', 'blevvr'),
+(38, 87, 'kts01', 'wrn1', 'fin01', '2', '0000-00-00 00:00:00', 0, '', 'web'),
+(39, 88, 'kts01', 'wrn1', 'fin01', '2', '0000-00-00 00:00:00', 0, '', 'kutdktu'),
+(41, 90, 'kts01', 'wrn1', 'fin01', '8', '0000-00-00 00:00:00', 0, '', 'Sex'),
+(42, 91, 'kts01', 'wrn1', 'fin01', '1', '0000-00-00 00:00:00', 0, '', 'sss');
 
 -- --------------------------------------------------------
 
@@ -161,7 +177,9 @@ CREATE TABLE `pengguna` (
 INSERT INTO `pengguna` (`id_pengguna`, `id_level`, `nama_lengkap`, `alamat`, `email`, `no_tlp`, `nama_pengguna`, `kata_sandi`) VALUES
 (1, 'lvl1', 'Priya Yudha Swandana', 'perum. pondok tanggul asri', 'priyayudha.sw27@gmai', '081330375369', 'dono', '123'),
 (2, 'lvl2', 'Aditia Afif', 'lumajang', 'adit@gmail.com', '080808800800', 'adit', '123'),
-(3, 'lvl1', 'Rizal', 'Jember', 'a@gmail.com', '0822123265', 'Rizal87', '1234');
+(3, 'lvl1', 'Rizal', 'Jember', 'a@gmail.com', '0822123265', 'Rizal87', '1234'),
+(4, 'lvl2', 'dana', 'jlg', 'igli', '97', 'dana', '123'),
+(5, 'lvl2', 'deta', 'olaoiwbo', 'doscok@gmail.com', '162124', 'deta', '123');
 
 -- --------------------------------------------------------
 
@@ -196,6 +214,18 @@ CREATE TABLE `transaksi` (
   `waktu_selesai` int(11) DEFAULT NULL,
   `harga_total` char(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `transaksi`
+--
+
+INSERT INTO `transaksi` (`id_transaksi`, `id_admin`, `id_pengguna`, `id_status`, `waktu_selesai`, `harga_total`) VALUES
+(36, NULL, 2, 1, NULL, NULL),
+(37, NULL, 4, 1, NULL, NULL),
+(38, NULL, 5, 1, NULL, NULL),
+(39, NULL, 4, 1, NULL, NULL),
+(41, NULL, 2, 1, NULL, NULL),
+(42, NULL, 4, 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -307,19 +337,19 @@ ALTER TABLE `admin_online`
 -- AUTO_INCREMENT for table `berkas`
 --
 ALTER TABLE `berkas`
-  MODIFY `id_berkas` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id_berkas` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
 
 --
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- Constraints for dumped tables
