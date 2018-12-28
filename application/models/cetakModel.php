@@ -77,8 +77,8 @@ class cetakModel extends CI_Model{
 		$lastID = $this->db->insert_id();
 		return $lastID;
 	}
-	public function lastID(){
-		$sql = sprintf("SELECT * FROM berkas ORDER BY id_berkas DESC LIMIT 1");
+	public function lastId(){
+		$sql = sprintf("SELECT id_kertas FROM kertas ORDER BY id_kertas DESC LIMIT 1");
 		$data=$this->db->query($sql);
 		return $data->result_array();
 	}	
