@@ -18,7 +18,7 @@ class login extends CI_Controller{
 				$this->session->set_userdata('namaPengguna', $this->model->namaPengguna);
 				$this->session->set_userdata('level', "1");
 				$id_pengguna = $this->model->getId();
-				$data = print_r($id_pengguna['0']);
+				// $data = print_r($id_pengguna['id_pengguna']);
 				$this->session->set_userdata('id_pengguna', $data);
 				redirect('admin');
 			}
@@ -26,8 +26,8 @@ class login extends CI_Controller{
 				$this->session->set_userdata('namaPengguna', $this->model->namaPengguna);
 				$this->session->set_userdata('level', "2");
 				$id_pengguna = $this->model->getId();
-				$data = print_r($id_pengguna['0']);
-				$this->session->set_userdata('id_pengguna', $data);
+				// $data = print_r($id_pengguna['id_pengguna']);
+				$this->session->set_userdata('id_pengguna', $id_pengguna);
 				redirect('home');
 			}else{
 				$this->model->notif = "Nama Pengguna dan Kata Sandi yang anda masukkan salah";
