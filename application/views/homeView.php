@@ -267,55 +267,6 @@ http://www.tooplate.com/view/2078-adventure
 					<button onclick="window.location.href='uploadFile'" class="btn-primary">Cetak</button>
 				</div>
 			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-				<div class="team-wrapper">
-					<img src="style/adventure/images/team1.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>George Chan</h4>
-							<h3>Trip Planner</h3>
-							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.6"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
-				<div class="team-wrapper">
-					<img src="style/adventure/images/team2.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Kitty Sandar</h4>
-							<h3>Trip Manager</h3>
-							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.6"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
-				<div class="team-wrapper">
-					<img src="style/adventure/images/team3.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Johnny Lynn</h4>
-							<h3>Location Explorer</h3>
-							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.6"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
 </section>

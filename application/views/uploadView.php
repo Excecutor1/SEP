@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Login Admin SEP</title>
+    <title>Upload File</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -84,7 +84,7 @@
                                             <div class="row">
 
                                                 <br>
-                                                <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>format yang didukung: </strong>doc|docx|pdf|sls|slsx|ppt|pptx</p></div>
+                                                <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>format yang didukung: </strong>doc|docx|pdf|xls|xlsx|ppt|pptx</p></div>
 
                                              <?php echo $error ?>
                                             <br>

@@ -8,7 +8,7 @@ class uploadFile extends CI_Controller{
             $this->load->model('cetakModel');
             $this->load->helper(array('form', 'url'));
             $config['upload_path']          = 'file/';
-            $config['allowed_types']        = 'doc|docx|pdf|sls|slsx|ppt|pptx';
+            $config['allowed_types']        = 'doc|docx|pdf|xls|xlsx|ppt|pptx';
             $config['max_size']             = 1000;
 
             $this->load->library('upload', $config);
@@ -29,7 +29,10 @@ class uploadFile extends CI_Controller{
                 else
                 {       
                         $nama = $this->upload->data('file_name');
-                        $this->cetakModel->upload($nama);
+                        $data = $this->cetakModel->upload($nama);
+                        // $id_berkas = $this->cetakModel->lastID();
+                        // $data = print_r($id_berkas['0']);
+                        $this->session->set_userdata('id_berkas', $data);
                 		$this->session->set_userdata('namaFile', '<i class="fa fa-check" style="margin-left: 13px"> </i>'.$nama);
                         $this->session->set_userdata('status', '<i class="fa fa-check" style="margin-left: 13px"> </i> File berhasil di Upload');
                         redirect('pengaturanFile');

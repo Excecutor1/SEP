@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Login Admin SEP</title>
+    <title>Pengaturan File</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -166,7 +166,7 @@
                                         </div>
                                         <div class="col-lg-9">
                                             <div class="form-select-list">
-                                                <input required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" type="text" class="form-control" name="keterangan" style="height: 200px" placeholder="Contoh : Semua halaman | diprint hanya halaman 3 | di print hanya halaman 2 dan 3" style="color: #000">
+                                                <textarea cols="1" rows="5" style="vertical-align: top; resize: none;"required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" type="text" class="form-control" name="keterangan"placeholder="Contoh : Semua halaman | diprint hanya halaman 3 | di print hanya halaman 2 dan 3" style="color: #000"></textarea> 
                                             </div>
                                         </div>
                                     </div>
