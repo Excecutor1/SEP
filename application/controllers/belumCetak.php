@@ -21,6 +21,13 @@ class belumCetak extends CI_Controller{
         $id = $this->uri->segment(3);
         $this->cetakModel->selesai($id);
     }
+    public function detail(){
+        $id = $this->uri->segment(3);
+        $this->data['hasil']=$this->cetakModel->belumCetak2($id);
+        $this->level = $this->session->userdata('level');
+        $this->pengguna = $this->session->userdata;
+        $this->load->view('detailView', $this->data, $this->level, $this->pengguna);
+    }
     public function tabel(){
         $this->data['hasil']=$this->cetakModel->belumCetak();
         $this->load->view('belumcetakTabel', $this->data);

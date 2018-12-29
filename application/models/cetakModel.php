@@ -6,7 +6,13 @@ class cetakModel extends CI_Model{
 		$this->load->database();
 	}
 	public function belumCetak(){
-		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status WHERE transaksi.ID_PENGGUNA = pengguna.ID_PENGGUNA AND transaksi.id_admin = admin_online.ID_PENGGUNA AND transaksi.ID_STATUS = status.ID_STATUS AND transaksi.ID_STATUS = 1 ORDER BY transaksi.ID_transaksi DESC");
+		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN warna WHERE cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_status = 1 ORDER BY transaksi.id_transaksi DESC");
+		$data=$this->db->query($sql);
+//		$data=$this->db->get('cetak');
+    	return $data->result_array();
+    }
+    public function belumCetak2($id){
+		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN kertas JOIN finishing JOIN warna JOIN berkas WHERE kertas.id_kertas = cetak.id_kertas AND finishing.id_finishing = cetak.id_finishing AND berkas.id_berkas = cetak.id_berkas AND cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_status = 1 AND transaksi.id_transaksi = ".$id."");
 		$data=$this->db->query($sql);
 //		$data=$this->db->get('cetak');
     	return $data->result_array();
