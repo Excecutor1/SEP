@@ -5,6 +5,7 @@ class cekData extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->load->library('session');
+		$this->load->model('cetakModel');
 		$this->load->helper('url');
 	}
 
@@ -13,6 +14,11 @@ class cekData extends CI_Controller{
 		// $s="asdf";
 		$data = array('hasil' => $a);
 		$this->load->view('cekDataview', $data);
+	}
+
+	public function clean(){
+		$this->cetakModel->clean();
+		redirect('cekData');
 	}
 }
 ?>

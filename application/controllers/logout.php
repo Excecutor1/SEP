@@ -17,7 +17,7 @@ class logout extends CI_Controller{
 			}elseif ($this->pengguna['level']==2){
 			$this->level = 2;
 			}
-		if ($this->session->has_userdata('namaPengguna')) {
+		if ($this->session->has_userdata('nama_pengguna')) {
 			$this->session->sess_destroy();
 			if ($this->level == 1){
 				redirect('login');

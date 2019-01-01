@@ -13,28 +13,45 @@ class uploadFile extends CI_Controller{
 
             $this->load->library('upload', $config);
     	}
+
 	public function index(){
-		$this->data['namaFile'] = $this->session->userdata('namaFile');
+        if($this->session->has_userdata('nama_pengguna')){
+		$this->data['nama_file'] = $this->session->userdata('nama_file');
 		$this->data['error'] = $this->session->userdata('status');
 		$this->load->view('uploadView', $this->data);//file view
+        }
+        else{
+            $alert = '<div class="alert alert-success alert-st-one" role="alert">Anda harus login dulu</div>';
+            $this->session->set_flashdata('alert', $alert);
+
+            // set userdata redirect
+            // ==========================================================
+            $this->session->set_userdata('redirect', 'uploadFile');
+            // ==========================================================
+            redirect('login');
+        }
 	}
 
 	 public function do_upload()
         {
                 if ( ! $this->upload->do_upload('userfile'))
                 {
+                        // set userdata status dengan error upload file
                         $this->session->set_userdata('status', $this->upload->display_errors());
                         redirect('upload_file');
                 }
                 else
-                {       
+                {      
+                        // memasukkan nama file ke database
                         $nama = $this->upload->data('file_name');
                         $data = $this->cetakModel->upload($nama);
-                        // $id_berkas = $this->cetakModel->lastID();
-                        // $data = print_r($id_berkas['0']);
+
+                        // set id berkas, nama file, dan status upload
                         $this->session->set_userdata('id_berkas', $data);
-                		$this->session->set_userdata('namaFile', '<i class="fa fa-check" style="margin-left: 13px"> </i>'.$nama);
+                		$this->session->set_userdata('nama_file', '<i class="fa fa-check" style="margin-left: 13px"> </i>'.$nama);
                         $this->session->set_userdata('status', '<i class="fa fa-check" style="margin-left: 13px"> </i> File berhasil di Upload');
+
+                        // redirect ke pengaturan file
                         redirect('pengaturanFile');
                 }
         }

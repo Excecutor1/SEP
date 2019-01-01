@@ -69,7 +69,7 @@
                     <br>
                     <strong>AS</strong>
                     <span style="color: black"><h4 class="welcome-admin">Selamat Datang</h4>
-                <h3 style="color: black">- <?php echo $this->pengguna['namaPengguna'] ?> -</h3></span>
+                <h3 style="color: black">- <?php echo $this->pengguna['nama_pengguna'] ?> -</h3></span>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
@@ -145,13 +145,13 @@
                                         <li class="nav-item">
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                 <span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>
-                                                <span class="admin-name"><?php echo $this->pengguna['namaPengguna'] ?></span>
+                                                <span class="admin-name"><?php echo $this->pengguna['nama_pengguna'] ?></span>
                                                 <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
                                                 <li><a href="#"><span class="adminpro-icon adminpro-user-rounded author-log-ic"></span>My Profile</a>
                                                 </li>
-                                                <li><a href="logout"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
+                                                <li><a href="logout" onclick="return confirm('Apakah anda yakin ingin keluar?')"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
                                                 </li>
                                             </ul>
                                         </li>

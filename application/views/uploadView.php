@@ -60,51 +60,40 @@
 <div class="wrapper-pro">
 
    
-            <!-- login Start-->
+<!-- Form Upload -->
+<!-- =============================================================== -->
 <div class="login-form-area mg-t-baru mg-b-baru">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-4"></div>
-                <div class="col-lg-4">
-                    <div class="login-bg">            
-                        <div class="form-group-inner">
-                            <p class="message-mg-rt "><strong>Upload File</strong> </p>
-                            <div>
-                                <?php echo $error;?>
-                                <?php echo form_open_multipart('uploadFile/do_upload');?>
-                                    
-                                            <div class="row">
-                                                <div class="col-xs-9"><input type="file" name="userfile" size="20" /></div>
-                                            </div>
-
-                                            <div class="row">
-                                                <br>
-                                                <div class="col-xs-9"><input type="submit" value="upload" /></div>
-                                            </div>
-                                            <div class="row">
-
-                                                <br>
-                                                <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>format yang didukung: </strong>doc|docx|pdf|xls|xlsx|ppt|pptx</p></div>
-
-                                             <?php echo $error ?>
-                                            <br>
-                                            <?php echo $namaFile;?>
-                                            </div>
-                                    
-                                </form>
-                            </div>
-                        </div>                       
-                        
-
-                        
-                        
+            <div class="col-lg-4">
+                <div class="login-bg">            
+                    <div class="form-group-inner">
+                        <p class="message-mg-rt "><strong>Upload File</strong> </p>
+                        <div>
+                            <?php echo $error;?>
+                            <?php echo form_open_multipart('uploadFile/do_upload');?>
+                                <div class="row">
+                                    <div class="col-xs-9"><input type="file" name="userfile" size="20" /></div>
+                                </div>
+                                <div class="row">
+                                    <br>
+                                    <div class="col-xs-9"><input type="submit" value="upload" /></div>
+                                </div>
+                                <div class="row">
+                                    <br>
+                                    <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>format yang didukung: </strong>doc|docx|pdf|xls|xlsx|ppt|pptx</p></div>
+                                    <?php echo $error ?>
+                                    <br>
+                                    <?php echo $nama_file;?>
+                                </div>                                
+                            </form>
+                        </div>
+                    </div>                      
+                </div>                   
             </div>
-                    
-                   
         </div>
     </div>
-            <!-- login End-->
-</div>
 </div>
     <!-- Footer Start-->
 
