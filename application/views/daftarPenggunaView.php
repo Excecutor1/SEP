@@ -136,8 +136,8 @@
                                         <div class="col-xs-8 center-block" style="float:none">
                                             <div class="login-button-pro" style="text-align: center">
                                                 
-                                                <input type="submit" class="login-button login-button-lg" name="btn_log" value="Tambahkan"/>
-                                                <a style="color: #888; margin-left: 10%" href="login">Batal</a>
+                                                <input type="submit" class="btn btn-warning" name="btn_log" value="Tambahkan"/>
+                                                <a style="color: white; margin-left: 10%" href="login">Batal</a>
                                                
                                             </div>
                                         </div>
