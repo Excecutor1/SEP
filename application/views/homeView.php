@@ -139,9 +139,9 @@ http://www.tooplate.com/view/2078-adventure
 				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 					<div class="section-title" >
 						<h5 class="wow bounceIn">SEP Online</h5>
-						<h1 class="color-white" >Apa yang bisa anda lakukan di sini?</h1>
+						<h1 class="color-white" >Apa yang Bisa Anda Lakukan di Sini?</h1>
 						<hr>
-						<p class="color-white">Cetak semua dokumen anda secara online tanpa mengantri dengan semua fasilitas yang ada di SEP (Setengah Enam Pagi)</p>
+						<p class="color-white">Cetak Semua Dokumen Anda Secara Online Tanpa Mengantri dengan Semua Fasilitas yang Ada di SEP (Setengah Enam Pagi)</p>
 					</div>
 				</div>
 
@@ -154,21 +154,21 @@ http://www.tooplate.com/view/2078-adventure
 						<i style="color: black" class="fa fa-print fa-3x"></i>
 						<h3>CETAK PAPER</h3>
 						
-						<p>Cetak Dokumen anda secara online disini</p>
+						<p style="color: black">Cetak Dokumen Anda Secara Online disini</p>
 					</div>
 
 					<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
 						<i style="color: black" class="icon-tablet fa-3x"></i>
 						<h3>FINISHING</h3>
 						
-						<p>Pilih segala bentuk finishing yang tersedia sesuai dengan keinginan</p>
+						<p style="color: black">Pilih Segala Bentuk Finishing yang Tersedia Sesuai dengan Keinginan</p>
 					</div>
 
 					<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
 						<i style="color: black" class="fa fa-money fa-3x"></i>
 						<h3>CEK HARGA</h3>
 						
-						<p>Cek Harga semua layanan di SEP dan sesuaikan dengan kebutuhan</p>
+						<p style="color: black">Cek Harga Semua Layanan di SEP dan Sesuaikan dengan Kebutuhan</p>
 					</div>
 				</div>
 
@@ -196,20 +196,20 @@ http://www.tooplate.com/view/2078-adventure
 
 				<!-- isi -->
 				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-					<h2 style="color: black">WHY CHOOSE US?</h2>
+					<h2 style="color: black">Bagaimana Mencetak di Website SEP?</h2>
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingTwo">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										Very Fast Respon
+										Login
 									</a>
 								</h4>
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								<div class="panel-body">
-									<p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
+									<p class="color-white">Anda Harus Login Terlebih Dahulu Untuk Mencetak File di Website SEP ini</p>
 								</div>
 							</div>
 						</div>
@@ -218,13 +218,13 @@ http://www.tooplate.com/view/2078-adventure
 							<div class="panel-heading" role="tab" id="headingTwo">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-										High Quality Team
+										Upload File
 									</a>
 								</h4>
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								<div class="panel-body">
-									<p class="color-white">Nullam vehicula tincidunt ultrices. Curabitur id magna velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium tortor ultrices ligula dictum placerat. Donec eget augue sapien. Curabitur vel orci magna. Sed id eros consequat nibh congue euismod.</p>
+									<p class="color-white">Pertama-Tama Upload File Yang Ingin di Cetak </p>
 								</div>
 							</div>
 						</div>
@@ -233,7 +233,7 @@ http://www.tooplate.com/view/2078-adventure
 							<div class="panel-heading" role="tab" id="headingThree">
 								<h4 class="panel-title">
 									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-										Special Awards
+										Isi Pengaturan File
 									</a>
 								</h4>
 							</div>
@@ -258,14 +258,15 @@ http://www.tooplate.com/view/2078-adventure
 		<div class="container">
 			<div class="row">
 
+
 			<!-- Judul
 				================================================== -->
 				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-					<div class="section-title">
+					<div style="margin-bottom: 0%" class="section-title">
 						<h5 class="wow bounceIn">WE ARE READY</h5>
-						<h1 class="color-white">OUR TEAM</h1>
+						<h1 class="color-white">Mulai Cetak</h1>
 						<hr>
-						<p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
+						<p class="color-white">Mulailah Mencetak dengan Cara Baru Melalui Website SEP, Untuk Mulai Mencetak Klik Tombol dibawah Ini</p>
 						<button onclick="window.location.href='uploadFile'" class="btn-primary">Cetak</button>
 					</div>
 				</div>
@@ -288,7 +289,7 @@ http://www.tooplate.com/view/2078-adventure
 				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
 					<div class="section-title">
 						<h5 class="wow bounceIn">Temukan kenyamananmu</h5>
-						<h1 class="color-white">HARGA</h1>
+						<h1 class="color-white">Harga</h1>
 						<hr>
 						<p class="color-white">SEP (Setengah Enam Pagi) Menawarkan kualitas bahan yang baik dengan harga yang terjangkau.</p>
 					</div>
@@ -298,58 +299,48 @@ http://www.tooplate.com/view/2078-adventure
 
 				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 					<div class="plan">
-						<h2 class="plan-title">Villager</h2>
+						<h2 class="plan-title">Berwarna</h2>
 						<div class="plan-price">
-							<h1 class="plan-price-title">$500 / <small>trip</small></h1>
+							<h1 class="plan-price-title">Low </h1>
 						</div>
 						<ul class="plan-list">
-							<li>4 days 3 nights</li>
-							<li>Explore Forest</li>
-							<li>Visit Waterfalls</li>
-							<li>Group of 10 people</li>
+							<li>Rp 500,- / <small>Lembar</small></li>
 						</ul>
-						<div class="plan-button">
-							<button class="btn btn-default">CHOOSE PLAN</button>
+						<div class="plan-price">
+							<h1 class="plan-price-title">Medium </h1>
 						</div>
+						<ul class="plan-list">
+							<li>Rp 1000,- / <small>Lembar</small></li>
+						</ul>
+						<div class="plan-price">
+							<h1 class="plan-price-title">High</h1>
+						</div>
+						<ul class="plan-list">
+							<li>Rp 3000,- / <small>Lembar</small></li>
+						</ul>
 					</div>
 				</div>
 
 				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
 					<div class="plan">
-						<h2 class="plan-title">Tourer</h2>
-						<div class="plan-price">
-							<h1 class="plan-price-title">$800 / <small>trip</small></h1>
-						</div>
+						<h2 class="plan-title">Hitam Putih</h2>
 						<ul class="plan-list">
-							<li>8 days 7 nights</li>
-							<li>Explore Mountains</li>
-							<li>Touring Villages</li>
-							<li>Group of 15 people</li>
+							<li>Rp 300,- / <small>Lembar</small></li>
 						</ul>
-						<div class="plan-button">
-							<button class="btn btn-default">CHOOSE PLAN</button>
-						</div>
 					</div>
 				</div>
 
 				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
 					<div class="plan">
-						<h2 class="plan-title">Explorer</h2>
+						<h2 class="plan-title">Kertas</h2>
 						<div class="plan-price">
-							<h1 class="plan-price-title">$1,400 / <small>trip</small></h1>
+							<h1 class="plan-price-title">A4</h1>
 						</div>
 						<ul class="plan-list">
-							<li>12 days 11 nights</li>
-							<li>Multiple Cities</li>
-							<li>Unique Experiences</li>
-							<li>Group of 20 people</li>
+							<li>Rp 200,- / <small>Lembar</small></li>
 						</ul>
-						<div class="plan-button">
-							<button class="btn btn-default">CHOOSE PLAN</button>
-						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -361,28 +352,7 @@ http://www.tooplate.com/view/2078-adventure
 
 <!-- Footer section
 	================================================== -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-
-					<h2 class="wow bounceIn">ADVENTURE STUDIO</h2>
-					<ul class="social-icon">
-						<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-						<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-						<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
-						<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="1s"></a></li>
-						<li><a href="#" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
-						<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="1.6s"></a></li>
-					</ul>
-					<p>Copyright &copy; 2016 Adventure Studio 
-						
-						| Design: <a rel="nofollow" href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
-
-					</div>
-				</div>
-			</div>
-		</footer>
+	
 
 
 <!-- Javascript 
