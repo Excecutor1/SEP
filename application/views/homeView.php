@@ -138,7 +138,7 @@ http://www.tooplate.com/view/2078-adventure
 
 				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 					<div class="section-title" >
-						<h5 class="wow bounceIn">SEP Online</h5>
+						<h5 style="color: #f9f2d2" class="wow bounceIn">SEP Online</h5>
 						<h1 class="color-white" >Apa yang Bisa Anda Lakukan di Sini?</h1>
 						<hr>
 						<p class="color-white">Cetak Semua Dokumen Anda Secara Online Tanpa Mengantri dengan Semua Fasilitas yang Ada di SEP (Setengah Enam Pagi)</p>
@@ -187,7 +187,7 @@ http://www.tooplate.com/view/2078-adventure
 				================================================== -->
 				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 					<div class="section-title">
-						<h5 class="wow bounceIn">Setengah Enam Pagi</h5>
+						<h5 style="color: #f9f2d2" class="wow bounceIn">Setengah Enam Pagi</h5>
 						<h1 class="color-white">Apa Itu SEP?</h1>
 						<hr>
 						<p class="color-white">SEP adalah...</p>
@@ -209,7 +209,7 @@ http://www.tooplate.com/view/2078-adventure
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								<div class="panel-body">
-									<p class="color-white">Anda Harus Login Terlebih Dahulu Untuk Mencetak File di Website SEP ini</p>
+									<p style="color: #f9f2d2" class="color-white">Anda Harus Login Terlebih Dahulu Untuk Mencetak File di Website SEP ini,Jika belum Memiliki Akun Silahkan untuk Daftar Terlebih Dahulu Agar dapat Melalkukan Login </p>
 								</div>
 							</div>
 						</div>
@@ -224,7 +224,7 @@ http://www.tooplate.com/view/2078-adventure
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								<div class="panel-body">
-									<p class="color-white">Pertama-Tama Upload File Yang Ingin di Cetak </p>
+									<p style="color: #f9f2d2" class="color-white">Pertama-Tama Upload File Yang Ingin di Cetak </p>
 								</div>
 							</div>
 						</div>
@@ -239,7 +239,7 @@ http://www.tooplate.com/view/2078-adventure
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 								<div class="panel-body">
-									<p class="color-white">Morbi pellentesque nisl at sapien congue facilisis. Proin consequat pharetra hendrerit. Aliquam vulputate, ligula ut pellentesque molestie, dolor nisi semper augue, sit amet porta risus sem non sapien. Cras vel pulvinar sapien, in consequat purus. Aliquam at varius augue.</p>
+									<p style="color: #f9f2d2" class="color-white">Atur Pengaturan File Tersebut Sesuai dengan Format yang diinginkan dan Periksa Pengaturan Tersebut  Agar Tidak Terjadi Kesalahan dalam Melakukan Percetakan</p>
 								</div>
 							</div>
 						</div>
@@ -267,7 +267,7 @@ http://www.tooplate.com/view/2078-adventure
 						<h1 class="color-white">Mulai Cetak</h1>
 						<hr>
 						<p class="color-white">Mulailah Mencetak dengan Cara Baru Melalui Website SEP, Untuk Mulai Mencetak Klik Tombol dibawah Ini</p>
-						<button onclick="window.location.href='uploadFile'" class="btn-primary">Cetak</button>
+						<button onclick="window.location.href='uploadFile'" class="btn btn-primary">Cetak</button>
 					</div>
 				</div>
 			</div>
@@ -288,7 +288,7 @@ http://www.tooplate.com/view/2078-adventure
 				================================================== -->
 				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
 					<div class="section-title">
-						<h5 class="wow bounceIn">Temukan kenyamananmu</h5>
+						<h5 style="color: #f9f2d2" class="wow bounceIn">Temukan kenyamananmu</h5>
 						<h1 class="color-white">Harga</h1>
 						<hr>
 						<p class="color-white">SEP (Setengah Enam Pagi) Menawarkan kualitas bahan yang baik dengan harga yang terjangkau.</p>
@@ -304,19 +304,19 @@ http://www.tooplate.com/view/2078-adventure
 							<h1 class="plan-price-title">Low </h1>
 						</div>
 						<ul class="plan-list">
-							<li>Rp 500,- / <small>Lembar</small></li>
+							<li>Rp 500,- / <small style="color: #f9f2d2">Lembar</small></li>
 						</ul>
 						<div class="plan-price">
 							<h1 class="plan-price-title">Medium </h1>
 						</div>
 						<ul class="plan-list">
-							<li>Rp 1000,- / <small>Lembar</small></li>
+							<li>Rp 1000,- / <small style="color: #f9f2d2">Lembar</small></li>
 						</ul>
 						<div class="plan-price">
 							<h1 class="plan-price-title">High</h1>
 						</div>
 						<ul class="plan-list">
-							<li>Rp 3000,- / <small>Lembar</small></li>
+							<li>Rp 3000,- / <small style="color: #f9f2d2">Lembar</small></li>
 						</ul>
 					</div>
 				</div>
@@ -325,7 +325,7 @@ http://www.tooplate.com/view/2078-adventure
 					<div class="plan">
 						<h2 class="plan-title">Hitam Putih</h2>
 						<ul class="plan-list">
-							<li>Rp 300,- / <small>Lembar</small></li>
+							<li>Rp 300,- / <small style="color: #f9f2d2">Lembar</small></li>
 						</ul>
 					</div>
 				</div>
@@ -334,12 +334,20 @@ http://www.tooplate.com/view/2078-adventure
 					<div class="plan">
 						<h2 class="plan-title">Kertas</h2>
 						<div class="plan-price">
-							<h1 class="plan-price-title">A4</h1>
+							<h1 class="plan-price-title">A4 70gram</h1>
 						</div>
 						<ul class="plan-list">
-							<li>Rp 200,- / <small>Lembar</small></li>
+							<li>Rp 200,- / <small style="color: #f9f2d2">Lembar</small></li>
+						</ul>
+						<div class="plan-price">
+							<h1 class="plan-price-title">F4 70gram</h1>
+						</div>
+						<ul class="plan-list">
+							<li>Rp 150,- / <small style="color: #f9f2d2">Lembar</small></li>
 						</ul>
 					</div>
+					</div>
+					
 				</div>
 			</div>
 		</div>

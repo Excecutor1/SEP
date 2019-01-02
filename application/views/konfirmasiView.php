@@ -66,7 +66,7 @@
                     <div class="row">
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4">
-                            <div style="background-color: white; border: 0px;" class="login-bg">                                                     
+                            <div style="background-color: #f7ba86; border: 0px;" class="login-bg">                                                     
                                 <form>
 
                                     <div class="form-group-inner">
@@ -86,7 +86,13 @@
                                                    <div class="panel-body"><?php echo $row['berkas']; ?></div>
                                                    <div class="panel-heading">Status</div>
                                                    <div class="panel-body">
-                                                    <?php echo $row['status']; ?></div>
+                                                    <?php if($row['id_status']==1){
+                                                        echo "<div class='alert alert-danger' role='alert'>
+                                                    ".$row['status']."</div>";
+                                                }else{
+                                                    echo "<div class='alert alert-success' role='alert'>
+                                                    ".$row['status']."</div>";
+                                                } ?></div>
 
                                                </div>
                                            <?php }; ?>

@@ -78,7 +78,7 @@ hr {
 ------------------------------------- */
 .section-title {
   border: 4px solid #000;
-  background-color: #ce4921c7;
+  background-color: #e8724ec7;
   padding: 50px;
   position: relative;
   text-align: center;
@@ -405,7 +405,7 @@ hr {
 }
 
 #about .panel-title > a {
-  background-color: #f37a56c7;
+  background-color: #f38869c7;
   text-decoration: none;
   display: block;
   width: 100%;
@@ -623,7 +623,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 #plan .plan {
-  background-color: #ce4921c7;
+  background-color: #e8724ec7;
   border: 4px solid #000;
   padding: 40px;
   transition: all 0.4s linear;
@@ -843,7 +843,7 @@ footer h2 {
     padding-top: 50px;
   }
   #plan .plan {
-    background-color: #ce4921c7;
+    background-color: #e8724ec7;
     padding-right: 0;
     margin: 54px auto 54px auto;
     width: 360px;
