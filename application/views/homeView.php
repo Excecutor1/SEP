@@ -263,7 +263,7 @@ http://www.tooplate.com/view/2078-adventure
 				================================================== -->
 				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 					<div style="margin-bottom: 0%" class="section-title">
-						<h5 class="wow bounceIn">WE ARE READY</h5>
+						<h5 style="color: #f9f2d2" class="wow bounceIn">WE ARE READY</h5>
 						<h1 class="color-white">Mulai Cetak</h1>
 						<hr>
 						<p class="color-white">Mulailah Mencetak dengan Cara Baru Melalui Website SEP, Untuk Mulai Mencetak Klik Tombol dibawah Ini</p>
