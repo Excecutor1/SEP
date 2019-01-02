@@ -56,6 +56,18 @@
     </head>
 
     <body class="materialdesign">
+                    <!-- auto refresh -->
+            <!-- ================================================================================ -->
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  var auto_refresh=setInterval(function(){
+                    $('#belumCetak').load('admin/jumlah1').fadeIn("slow");
+                    $('#sudahCetak').load('admin/jumlah2').fadeIn("slow");
+                },200);
+              });
+          </script>
+
+          
         <div class="wrapper-pro">
             <div class="left-sidebar-pro">
                 <nav id="sidebar">
@@ -167,16 +179,7 @@
                 </div>
             </div>
 
-            <!-- auto refresh -->
-            <!-- ================================================================================ -->
-            <script type="text/javascript">
-                $(document).ready(function(){
-                  var auto_refresh=setInterval(function(){
-                    $('#belumCetak').load('admin/jumlah1').fadeIn("slow");
-                    $('#sudahCetak').load('admin/jumlah2').fadeIn("slow");
-                },500);
-              });
-          </script>
+
 
 
           <!-- CONTENT -->

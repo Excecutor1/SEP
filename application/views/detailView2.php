@@ -275,9 +275,9 @@
 </div>
 </div>
 <div class="row">
-    <div class="col-lg-3 center-block" style="float:none"><button class="btn btn-danger" onclick="window.location.href='../../belumCetak'">Kembali</button>
+    <div class="col-lg-3 center-block" style="float:none"><button class="btn btn-danger" onclick="window.location.href='../../sudahCetak'">Kembali</button>
         <button class="btn btn-success" onclick="window.open('../lihatFile/<?php echo $this->id_berkas?>', '_blank')">Lihat File</button>
-        <button class="btn btn-primary" onclick="window.open('../lihatFile/<?php echo $this->id_berkas?>', '_blank'); window.location.href='../selesaiCetak/<?php echo $this->id ?>'">Cetak</button></div>
+        </div>
         <!-- <div class="col-xs-4 center-block" style="float:none"><button class="btn btn-primary">Cetak</button></div> -->
     </div>
 </div>

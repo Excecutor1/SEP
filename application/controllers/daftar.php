@@ -10,7 +10,7 @@ class daftar extends CI_Controller{
 	}
 
 	public function index (){
-		if ($this->session->has_userdata('namaPengguna')) {
+		if ($this->session->has_userdata('nama_pengguna')) {
            if (isset($_POST['btn_log'])) {
             $this->model->namaPengguna = $_POST['namaPengguna'];
             $this->model->namaLengkap = $_POST['namaLengkap'];

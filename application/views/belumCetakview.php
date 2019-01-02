@@ -210,6 +210,7 @@
     											<thead>
     												<tr class="headings">
     													<th>ID Transaksi</th>
+                                                        <th>Waktu</th>
     													<th>Pengguna</th>
     													<th>Status</th>
     													<th>Harga Total</th>
@@ -221,8 +222,9 @@
     													<tr class="even pointer">
     														<?php $this->id = $row['id_transaksi'];?>
     														<td><?php echo $row['id_transaksi']; ?></td>
+                                                            <td><?php echo $row['waktu_cetak']; ?></td>
     														<td><?php echo $row['nama_pengguna']; ?></td>
-    														<td><?php echo $row['id_status']; ?></td>
+    														<td><?php echo $row['status']; ?></td>
     														<td>Harga Total</td>
     														<td><?php echo '<a href="belumCetak/detail/'.$this->id.'">detail</a>'?></td>
     													</tr>  

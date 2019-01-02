@@ -18,6 +18,8 @@ class daftarPengguna extends CI_Controller{
             $this->model->noTlp = $_POST['noTlp'];
             $this->model->kataSandi = $_POST['kataSandi'];
             $this->model->daftar();
+            $alert = '<div class="alert alert-success alert-st-one" role="alert">Anda berhasil mendaftar</div>';
+            $this->session->set_flashdata('alert', $alert);
             redirect('login');
             }
             else{

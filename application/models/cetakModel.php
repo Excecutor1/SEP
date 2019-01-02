@@ -9,7 +9,7 @@ class cetakModel extends CI_Model{
 	// Mengambil informasi file yang belum di cetak
 	// ======================================================================================================
 	public function belumCetak(){
-		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN warna WHERE cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_status = 1 ORDER BY transaksi.id_transaksi DESC");
+		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN warna WHERE cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_status = 1 ORDER BY transaksi.id_transaksi");
 		$data=$this->db->query($sql);
 		return $data->result_array();
 	}
@@ -17,7 +17,7 @@ class cetakModel extends CI_Model{
     // Mengambil informasi file yang belum di cetak sesuai id transaksi
     // =======================================================================================================
 	public function detailCetak($id){
-		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN kertas JOIN finishing JOIN warna JOIN berkas WHERE kertas.id_kertas = cetak.id_kertas AND finishing.id_finishing = cetak.id_finishing AND berkas.id_berkas = cetak.id_berkas AND cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_status = 1 AND transaksi.id_transaksi = ".$id."");
+		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN kertas JOIN finishing JOIN warna JOIN berkas WHERE kertas.id_kertas = cetak.id_kertas AND finishing.id_finishing = cetak.id_finishing AND berkas.id_berkas = cetak.id_berkas AND cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_transaksi = ".$id."");
 		$data=$this->db->query($sql);
 		return $data->result_array();
 	}
@@ -26,7 +26,7 @@ class cetakModel extends CI_Model{
     // ======================================================================================================
 
 	public function sudahCetak(){
-		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status WHERE transaksi.ID_PENGGUNA = pengguna.ID_PENGGUNA AND transaksi.id_admin = admin_online.ID_PENGGUNA AND transaksi.ID_STATUS = status.ID_STATUS AND transaksi.ID_STATUS = 2");
+		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN warna WHERE cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_status = 2 ORDER BY transaksi.id_transaksi DESC");
 		$data=$this->db->query($sql);
 		return $data->result_array();
 	}
@@ -48,10 +48,10 @@ class cetakModel extends CI_Model{
 	// Membuka file yang dipilih
 	// ======================================================================================================
 	public function getFile($id){
-		$query = $this->db->get_where('cetak', array('ID_CETAK' => $id));
+		$query = $this->db->get_where('berkas', array('id_berkas' => $id));
 		foreach ($query->result() as $data) {
-			$file = "file/".$data->BERKAS;
-			$nama = $data->BERKAS;
+			$file = "file/".$data->berkas;
+			$nama = $data->berkas;
 			header('Content-type: application/pdf');
 			header('Content-Disposition: inline; filename="'.$nama.'"');
 			header('Content-Length: ' . filesize($file));
@@ -65,9 +65,9 @@ class cetakModel extends CI_Model{
 	// ======================================================================================================
 	public function selesai($id){
 		$data = array(
-			'ID_STATUS' => 2,
+			'id_status' => 2,
 		);
-		$this->db->where('ID_transaksi', $id);
+		$this->db->where('id_transaksi', $id);
 		$this->db->update('transaksi', $data);
 		redirect('belumCetak');
 	}

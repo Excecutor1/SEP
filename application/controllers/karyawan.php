@@ -8,7 +8,7 @@ class karyawan extends CI_Controller{
     	}
 
      public function index(){
-        if ($this->session->has_userdata('namaPengguna')) {
+        if ($this->session->has_userdata('nama_pengguna')) {
             $this->load->model('cetakModel');
             $this->data['hasil']=$this->karyawanModel->karyawan();
             $this->level = $this->session->userdata('level');

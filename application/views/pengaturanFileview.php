@@ -185,11 +185,17 @@
                                                             </div>
                                                             <div class="col-lg-9">
                                                                 <div class="form-select-list">
-                                                                    <textarea cols="1" rows="5" style="vertical-align: top; resize: none;"required="" oninvalid="this.setCustomValidity('Kolom Tidak Boleh Kosong')" type="text" class="form-control" name="keterangan"placeholder="Contoh : Semua halaman | diprint hanya halaman 3 | di print hanya halaman 2 dan 3" style="color: #000"></textarea> 
+                                                                    <textarea cols="1" rows="5" style="vertical-align: top; resize: none;" type="text" class="form-control" name="keterangan"placeholder="Contoh : Semua halaman | diprint hanya halaman 3 | di print hanya halaman 2 dan 3" style="color: #000"></textarea> 
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="row">
+                                                    <div class="col-xs-12 center-block" style="float: none;">
+                                                        <input type="checkbox" name="konfirmasiFile" required="harus di centang"> File yang saya upload sudah benar
+                                                    </div>
+                                                    <!-- </div> -->
+                                                </div>
                                                 </div>         
 
                                                 <!-- Tombol Cetak -->
@@ -197,7 +203,7 @@
                                                 <div class="row">
                                                     <div class="col-xs-12 center-block" style="float:none">
                                                         <div class="login-button-pro" style="text-align: center">
-                                                         <input type="submit" class="login-button login-button-lg" name="btn_cetak" value="Cetak"/>
+                                                         <input type="submit" class="login-button login-button-lg" name="btn_cetak" value="Cetak" onclick="return confirm('Apakah data yang anda masukan sudah benar?')"/>
                                                      </div>
                                                  </div>
                                              </div>
