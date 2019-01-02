@@ -33,6 +33,8 @@ class login extends CI_Controller{
 				if($this->session->has_userdata('redirect')){
 					$redirect = $this->session->userdata('redirect');
 					$this->session->userdata('redirect', null);
+					// kembalikan ke halaman sebelumnya
+					// ===============================================
 					redirect($redirect);
 				}else{
 					redirect('home');
