@@ -85,7 +85,7 @@
                             <li class="nav-item">
                                 <a href="../../admin" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa big-icon fa-home"></i> <span class="mini-dn">Beranda</span> <span class="indicator-right-menu mini-dn"></span></a>
                             </li>
-                            <li class="nav-item"><a href="../../belumCetak" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa fa-clock-o"></i> <span class="mini-dn">File Belum Cetak</span> </a>
+                            <li class="nav-item"><a href="../../belumCetak" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="glyphicon glyphicon-remove"></i> <span class="mini-dn">File Belum Cetak</span> </a>
                             </li>
                             <li class="nav-item"><a href="../../sudahCetak" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="glyphicon glyphicon-ok"></i> <span class="mini-dn">File Sudah Cetak</span> <span class="indicator-right-menu mini-dn"></i></span></a>
 
@@ -280,12 +280,8 @@
 </div>
 <div class="row">
     <div class="col-lg-3 center-block" style="float:none"><button class="btn btn-danger" onclick="window.location.href='../../belumCetak'">Kembali</button>
-        <button class="btn btn-success" onclick="window.open('../lihatFile/<?php echo $this->id_berkas?>', '_blank'); window.location.href='../harga/<?php echo $this->id?>'">Lihat File</button>
-        </div>
+        <button class="btn btn-primary" onclick="window.open('../lihatFile/<?php echo $this->id_berkas?>', '_blank'); window.location.href='../selesaiCetak/<?php echo $this->id ?>'">Cetak</button></div>
         <!-- <div class="col-xs-4 center-block" style="float:none"><button class="btn btn-primary">Cetak</button></div> -->
-    </div>
-    <div class="row">
-        <?php echo $this->alert; ?>
     </div>
 </div>
 <!-- Footer End-->

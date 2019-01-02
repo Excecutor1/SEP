@@ -9,7 +9,7 @@ class cetakModel extends CI_Model{
 	// Mengambil informasi file yang belum di cetak
 	// ======================================================================================================
 	public function belumCetak(){
-		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN warna WHERE cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_status = 1 ORDER BY transaksi.id_transaksi");
+		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN warna WHERE cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND (transaksi.id_status = 1 || transaksi.id_status = 3) ORDER BY transaksi.id_transaksi");
 		$data=$this->db->query($sql);
 		return $data->result_array();
 	}
@@ -136,6 +136,25 @@ class cetakModel extends CI_Model{
 			TRUNCATE 'berkas';
 
 			SET FOREIGN_KEY_CHECKS = 1;");
+	}
+
+	// mengambil data saldo
+	// =================================================================
+	public function getSaldo($id){
+		$query = $this->db->query("SELECT saldo FROM transaksi JOIN pengguna WHERE pengguna.id_pengguna = transaksi.id_pengguna AND transaksi.id_transaksi = '".$id."'");
+		foreach ($query->result_array() as $row) {
+			return (int) $row['saldo'];
+		}
+	}
+
+	// update status saldo tidak cukup
+	// =================================================================
+	public function saldoTidakcukup($id){
+		$data = array(
+			'id_status' => 3,
+		);
+		$this->db->where('id_transaksi', $id);
+		$this->db->update('transaksi', $data);
 	}
 }
 ?>
