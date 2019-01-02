@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02 Jan 2019 pada 19.55
--- Versi Server: 10.1.16-MariaDB
--- PHP Version: 7.0.9
+-- Generation Time: Jan 03, 2019 at 12:51 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -23,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin_online`
+-- Table structure for table `admin_online`
 --
 
 CREATE TABLE `admin_online` (
@@ -32,7 +34,7 @@ CREATE TABLE `admin_online` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `admin_online`
+-- Dumping data for table `admin_online`
 --
 
 INSERT INTO `admin_online` (`id_online`, `id_pengguna`) VALUES
@@ -41,7 +43,7 @@ INSERT INTO `admin_online` (`id_online`, `id_pengguna`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `berkas`
+-- Table structure for table `berkas`
 --
 
 CREATE TABLE `berkas` (
@@ -50,17 +52,18 @@ CREATE TABLE `berkas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `berkas`
+-- Dumping data for table `berkas`
 --
 
 INSERT INTO `berkas` (`id_berkas`, `berkas`) VALUES
 (2, '115-252-1-PB3.pdf'),
-(1, '412-1312-1-PB1.pdf');
+(1, '412-1312-1-PB1.pdf'),
+(3, 'Persiapan_diklat_alam2.docx');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `cetak`
+-- Table structure for table `cetak`
 --
 
 CREATE TABLE `cetak` (
@@ -76,17 +79,18 @@ CREATE TABLE `cetak` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `cetak`
+-- Dumping data for table `cetak`
 --
 
 INSERT INTO `cetak` (`id_transaksi`, `id_berkas`, `id_kertas`, `id_warna`, `id_finishing`, `salinan`, `waktu_proses`, `harga`, `keterangan`) VALUES
 (1, 1, 'kts02', 'wrn1', 'Fin02', '1', 0, '', 's'),
-(2, 2, 'kts01', 'wrn1', 'fin01', '1', 0, '', 'w');
+(2, 2, 'kts01', 'wrn1', 'fin01', '1', 0, '', 'w'),
+(3, 3, 'kts01', 'wrn2', 'fin01', '1', 0, '', 'joooooooooooooooooooo');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `finishing`
+-- Table structure for table `finishing`
 --
 
 CREATE TABLE `finishing` (
@@ -95,7 +99,7 @@ CREATE TABLE `finishing` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `finishing`
+-- Dumping data for table `finishing`
 --
 
 INSERT INTO `finishing` (`id_finishing`, `finishing`) VALUES
@@ -105,7 +109,7 @@ INSERT INTO `finishing` (`id_finishing`, `finishing`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kertas`
+-- Table structure for table `kertas`
 --
 
 CREATE TABLE `kertas` (
@@ -114,7 +118,7 @@ CREATE TABLE `kertas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kertas`
+-- Dumping data for table `kertas`
 --
 
 INSERT INTO `kertas` (`id_kertas`, `kertas`) VALUES
@@ -124,7 +128,7 @@ INSERT INTO `kertas` (`id_kertas`, `kertas`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `level`
+-- Table structure for table `level`
 --
 
 CREATE TABLE `level` (
@@ -133,7 +137,7 @@ CREATE TABLE `level` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `level`
+-- Dumping data for table `level`
 --
 
 INSERT INTO `level` (`id_level`, `level`) VALUES
@@ -143,7 +147,7 @@ INSERT INTO `level` (`id_level`, `level`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pengguna`
+-- Table structure for table `pengguna`
 --
 
 CREATE TABLE `pengguna` (
@@ -154,48 +158,50 @@ CREATE TABLE `pengguna` (
   `email` varchar(30) NOT NULL,
   `no_tlp` char(12) NOT NULL,
   `nama_pengguna` varchar(20) NOT NULL,
-  `kata_sandi` char(15) NOT NULL
+  `kata_sandi` char(15) NOT NULL,
+  `saldo` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `pengguna`
+-- Dumping data for table `pengguna`
 --
 
-INSERT INTO `pengguna` (`id_pengguna`, `id_level`, `nama_lengkap`, `alamat`, `email`, `no_tlp`, `nama_pengguna`, `kata_sandi`) VALUES
-(1, 'lvl1', 'Priya Yudha Swandana', 'perum. pondok tanggul asri', 'priyayudha.sw27@gmai', '081330375369', 'dono', '123'),
-(2, 'lvl2', 'Aditia Afif', 'lumajang', 'adit@gmail.com', '080808800800', 'adit', '123'),
-(3, 'lvl1', 'Rizal', 'Jember', 'a@gmail.com', '0822123265', 'Rizal87', '1234'),
-(4, 'lvl2', 'dana', 'jlg', 'igli', '97', 'dana', '123'),
-(5, 'lvl2', 'deta', 'olaoiwbo', 'doscok@gmail.com', '162124', 'deta', '123'),
-(6, 'lvl2', 'hana', 'tanggul', 'hana@yuhu', '09812098123', 'hana', '123'),
-(7, 'lvl2', 'arif', 'baturaden', 'dos.cok@gmail.com', '08108108108', 'arif', '123'),
-(8, 'lvl2', 'adit', 'lumajang', 'aditia_loverbarca@yahoo.com', '12345', 'adit98', '123'),
-(9, 'lvl2', 'adit', 's', 'aditiaafif98@gmail.com', '23', 'donoa', '2'),
-(10, 'lvl2', 'adit', 'wdd', 'aditi@jhkj', '23', 'adit98', '2');
+INSERT INTO `pengguna` (`id_pengguna`, `id_level`, `nama_lengkap`, `alamat`, `email`, `no_tlp`, `nama_pengguna`, `kata_sandi`, `saldo`) VALUES
+(1, 'lvl1', 'Priya Yudha Swandana', 'perum. pondok tanggul asri', 'priyayudha.sw27@gmai', '081330375369', 'dono', '123', 0),
+(2, 'lvl2', 'Aditia Afif', 'lumajang', 'adit@gmail.com', '080808800800', 'adit', '123', 0),
+(3, 'lvl1', 'Rizal', 'Jember', 'a@gmail.com', '0822123265', 'Rizal87', '1234', 0),
+(4, 'lvl2', 'dana', 'jlg', 'igli', '97', 'dana', '123', 10000),
+(5, 'lvl2', 'deta', 'olaoiwbo', 'doscok@gmail.com', '162124', 'deta', '123', 0),
+(6, 'lvl2', 'hana', 'tanggul', 'hana@yuhu', '09812098123', 'hana', '123', 0),
+(7, 'lvl2', 'arif', 'baturaden', 'dos.cok@gmail.com', '08108108108', 'arif', '123', 0),
+(8, 'lvl2', 'adit', 'lumajang', 'aditia_loverbarca@yahoo.com', '12345', 'adit98', '123', 0),
+(9, 'lvl2', 'adit', 's', 'aditiaafif98@gmail.com', '23', 'donoa', '2', 0),
+(10, 'lvl2', 'adit', 'wdd', 'aditi@jhkj', '23', 'adit98', '2', 0);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `status`
+-- Table structure for table `status`
 --
 
 CREATE TABLE `status` (
   `id_status` int(11) NOT NULL,
-  `status` varchar(15) NOT NULL
+  `status` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `status`
+-- Dumping data for table `status`
 --
 
 INSERT INTO `status` (`id_status`, `status`) VALUES
 (1, 'Belum Cetak'),
-(2, 'Sudah Cetak');
+(2, 'Sudah Cetak'),
+(3, 'saldo tidak cukup');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transaksi`
+-- Table structure for table `transaksi`
 --
 
 CREATE TABLE `transaksi` (
@@ -209,17 +215,18 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `transaksi`
+-- Dumping data for table `transaksi`
 --
 
 INSERT INTO `transaksi` (`id_transaksi`, `id_admin`, `id_pengguna`, `id_status`, `waktu_selesai`, `harga_total`, `waktu`) VALUES
-(1, NULL, 2, 1, NULL, NULL, '2019-01-03 01:45:36'),
-(2, NULL, 2, 1, NULL, NULL, '2019-01-03 01:46:06');
+(1, NULL, 2, 2, NULL, NULL, '2019-01-03 01:45:36'),
+(2, NULL, 2, 3, NULL, NULL, '2019-01-03 01:46:06'),
+(3, NULL, 4, 2, NULL, NULL, '2019-01-03 04:44:57');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `warna`
+-- Table structure for table `warna`
 --
 
 CREATE TABLE `warna` (
@@ -228,7 +235,7 @@ CREATE TABLE `warna` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `warna`
+-- Dumping data for table `warna`
 --
 
 INSERT INTO `warna` (`id_warna`, `warna`) VALUES
@@ -321,33 +328,37 @@ ALTER TABLE `warna`
 --
 ALTER TABLE `admin_online`
   MODIFY `id_online` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `berkas`
 --
 ALTER TABLE `berkas`
-  MODIFY `id_berkas` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_berkas` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
   MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
 --
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `admin_online`
+-- Constraints for table `admin_online`
 --
 ALTER TABLE `admin_online`
   ADD CONSTRAINT `admin_online_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`);
 
 --
--- Ketidakleluasaan untuk tabel `cetak`
+-- Constraints for table `cetak`
 --
 ALTER TABLE `cetak`
   ADD CONSTRAINT `cetak_ibfk_1` FOREIGN KEY (`id_warna`) REFERENCES `warna` (`id_warna`),
@@ -357,18 +368,19 @@ ALTER TABLE `cetak`
   ADD CONSTRAINT `cetak_ibfk_6` FOREIGN KEY (`id_berkas`) REFERENCES `berkas` (`id_berkas`);
 
 --
--- Ketidakleluasaan untuk tabel `pengguna`
+-- Constraints for table `pengguna`
 --
 ALTER TABLE `pengguna`
   ADD CONSTRAINT `pengguna_ibfk_1` FOREIGN KEY (`id_level`) REFERENCES `level` (`id_level`);
 
 --
--- Ketidakleluasaan untuk tabel `transaksi`
+-- Constraints for table `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`id_status`) REFERENCES `status` (`id_status`),
   ADD CONSTRAINT `transaksi_ibfk_3` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`),
   ADD CONSTRAINT `transaksi_ibfk_4` FOREIGN KEY (`id_admin`) REFERENCES `admin_online` (`id_online`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
