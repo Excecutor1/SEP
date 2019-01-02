@@ -25,7 +25,7 @@ s
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 html, body {font-family: 'Open Sans', sans-serif;font-weight:400;background: #03a9f0}
-html, body.materialdesign {background: #ebebeb}
+html, body.materialdesign {background: #f9f2d2}
 .floatleft {float:left}
 .floatright {float:right}
 .alignleft {float:left;margin-right:15px;margin-bottom: 15px}

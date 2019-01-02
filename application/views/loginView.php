@@ -116,11 +116,11 @@
                                       <!-- <div class="col-xs-3"> </div> -->
                                       <div class="col-xs-8 center-block" style="float:none">
                                         <div class="login-button-pro" style="text-align: center; padding: 0px; padding-bottom: 10%;">
-                                            <input type="submit" class="login-button login-button-lg" name="btn_log" value="Masuk"/>
-                                            <a style="color: blue; margin-left: 10%" href="daftarPengguna">Daftar</a>
+                                            <input type="submit" class="btn btn-warning" name="btn_log" value="Masuk"/>
+                                            <a style="color: white; margin-left: 10%" href="daftarPengguna">Daftar</a>
                                         </div>
 
-                                        <a style="text-align: center; color: #888" href="home">Kembali ke Beranda</a>
+                                        <a style="text-align: center; color: white" href="home">Kembali ke Beranda</a>
                                     </div>
                                     <!-- <div class="col-xs-3"> </div> -->
                                 </div>
