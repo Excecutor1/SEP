@@ -83,7 +83,7 @@ http://www.tooplate.com/view/2078-adventure
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="cekData">cek data</a></li>
+					<li><a href="konfirmasi">cek data</a></li>
 					<li><a href="#work" class="smoothScroll">BERANDA</a></li>
 					<li><a href="#about" class="smoothScroll">TENTANG</a></li>
 					<li><a href="#team" class="smoothScroll">CETAK</a></li>

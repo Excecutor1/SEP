@@ -22,6 +22,14 @@ class cetakModel extends CI_Model{
 		return $data->result_array();
 	}
 
+	// Mengambil informasi file yang belum di cetak sesuai id transaksi
+    // =======================================================================================================
+	public function detailCetak2($id){
+		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN kertas JOIN finishing JOIN warna JOIN berkas WHERE kertas.id_kertas = cetak.id_kertas AND finishing.id_finishing = cetak.id_finishing AND berkas.id_berkas = cetak.id_berkas AND cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_pengguna = ".$id."");
+		$data=$this->db->query($sql);
+		return $data->result_array();
+	}
+
     //  Mengambil informasi file yang sudah di cetak
     // ======================================================================================================
 
