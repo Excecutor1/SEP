@@ -222,7 +222,7 @@
                                                         <tr class="even pointer">
                                                             <?php $this->id = $row['id_transaksi'];?>
                                                             <td><?php echo $row['id_transaksi']; ?></td>
-                                                            <td><?php echo $row['waktu_cetak']; ?></td>
+                                                            <td><?php echo $row['waktu']; ?></td>
                                                             <td><?php echo $row['nama_pengguna']; ?></td>
                                                             <td><?php echo $row['status']; ?></td>
                                                             <td>Harga Total</td>

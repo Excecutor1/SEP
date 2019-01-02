@@ -221,7 +221,7 @@
                                 </tr>
                                 <tr class="even pointer">
                                     <td class="tdata">Waktu</td>
-                                    <td><?php echo $row['waktu_cetak']; ?></td>
+                                    <td><?php echo $row['waktu']; ?></td>
                                 </tr>
                                 <tr class="even pointer">
                                     <td class="tdata">Nama Pengguna</td>

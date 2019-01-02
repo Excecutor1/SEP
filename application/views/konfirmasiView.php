@@ -66,32 +66,30 @@
                     <div class="row">
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4">
-                            <div class="login-bg">                                                     
+                            <div style="background-color: white; border: 0px;" class="login-bg">                                                     
                                 <form>
-                                    <?php foreach ($cetak as $row) {?>
+                                    
                                         <div class="form-group-inner">
                                             <div id="tabel" class="table-responsive">
-                                            <table class="table table-striped jambo_table bulk_action">
-                                                <tr>
-                                                    <td>Waktu Cetak</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><?php echo $row['waktu_cetak']; ?></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Berkas</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><?php echo $row['berkas']; ?></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Status</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><?php echo $row['status']; ?></td>
-                                                </tr>
-                                            <?php }; ?>
-                                            </table>
+                                                <?php foreach ($cetak as $row) {
+                                                    $i=0;?>
+                                                      <ul class="nav nav-tabs">
+    <li class="active"><a href="#"><b>Cetak ke -<?php $i++; echo $i; ?></b></a></li>
+
+  </ul>
+  <!-- <?php  ?> -->
+                                                <div class="panel panel-default">
+                                             <div class="panel-heading">Waktu Cetak</div>
+                                         <div class="panel-body"><?php echo $row['waktu']; ?></div>
+                                         <div class="panel-heading">Berkas</div>
+                                         <div class="panel-body"><?php echo $row['berkas']; ?></div>
+                                         <div class="panel-heading">Status</div>
+                                         <div class="panel-body"><?php echo $row['status']; ?></div>
+                                                
+                                                </div>
+                                                <?php }; ?>
+
+                                           
 
                                    </div>
 
