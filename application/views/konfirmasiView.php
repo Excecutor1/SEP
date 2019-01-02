@@ -68,49 +68,51 @@
                         <div class="col-lg-4">
                             <div style="background-color: white; border: 0px;" class="login-bg">                                                     
                                 <form>
-                                    
-                                        <div class="form-group-inner">
-                                            <div id="tabel" class="table-responsive">
-                                                <?php foreach ($cetak as $row) {
-                                                    $i=0;?>
-                                                      <ul class="nav nav-tabs">
-    <li class="active"><a href="#"><b>Cetak ke -<?php $i++; echo $i; ?></b></a></li>
 
-  </ul>
-  <!-- <?php  ?> -->
+                                    <div class="form-group-inner">
+                                        <div id="tabel" class="table-responsive">
+                                            <?php
+                                            $i=0; 
+                                            foreach ($cetak as $row) {?>
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active"><a href="#"><b>No. <?php $i++; echo $i; ?></b></a></li>
+
+                                                </ul>
+                                                <!-- <?php  ?> -->
                                                 <div class="panel panel-default">
-                                             <div class="panel-heading">Waktu Cetak</div>
-                                         <div class="panel-body"><?php echo $row['waktu']; ?></div>
-                                         <div class="panel-heading">Berkas</div>
-                                         <div class="panel-body"><?php echo $row['berkas']; ?></div>
-                                         <div class="panel-heading">Status</div>
-                                         <div class="panel-body"><?php echo $row['status']; ?></div>
-                                                
-                                                </div>
-                                                <?php }; ?>
+                                                   <div class="panel-heading">Waktu Cetak</div>
+                                                   <div class="panel-body"><?php echo $row['waktu']; ?></div>
+                                                   <div class="panel-heading">Berkas</div>
+                                                   <div class="panel-body"><?php echo $row['berkas']; ?></div>
+                                                   <div class="panel-heading">Status</div>
+                                                   <div class="panel-body">
+                                                    <?php echo $row['status']; ?></div>
+
+                                               </div>
+                                           <?php }; ?>
 
                                            
 
-                                   </div>
+                                       </div>
 
-                               </div>
-                           </form>
+                                   </div>
+                               </form>
                            </div>
 
 
 
+                       </div>
+
+
                    </div>
-
-
                </div>
+               <!-- login End-->
            </div>
-           <!-- login End-->
        </div>
-   </div>
-   <!-- Footer Start-->
+       <!-- Footer Start-->
 
 
-   <!-- Footer End-->
+       <!-- Footer End-->
     <!-- jquery
         ============================================ -->
         <script src="style/js/vendor/jquery-1.11.3.min.js"></script>
