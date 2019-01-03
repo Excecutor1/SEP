@@ -156,5 +156,15 @@ class cetakModel extends CI_Model{
 		$this->db->where('id_transaksi', $id);
 		$this->db->update('transaksi', $data);
 	}
+
+	// menyimpan harga ke table
+	// ================================================================
+	public function simpanHarga($id,$harga){
+		$data = array(
+			'harga' => $harga,
+		);
+		$this->db->where('id_transaksi', $id);
+		$this->db->update('transaksi', $data);
+	}	
 }
 ?>

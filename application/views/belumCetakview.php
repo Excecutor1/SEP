@@ -213,7 +213,7 @@
                                                         <th>Waktu</th>
     													<th>Pengguna</th>
     													<th>Status</th>
-    													<th>Harga Total</th>
+    													<th>Harga</th>
     													<th>Detail</th>
     												</tr>
     											</thead>
@@ -225,7 +225,7 @@
                                                             <td><?php echo $row['waktu']; ?></td>
     														<td><?php echo $row['nama_pengguna']; ?></td>
     														<td><?php echo $row['status']; ?></td>
-    														<td>Harga Total</td>
+    														<td><?php echo $row['harga']; ?></td>
     														<td><?php echo '<a href="belumCetak/detail/'.$this->id.'">detail</a>'?></td>
     													</tr>  
     												<?php }; ?>
