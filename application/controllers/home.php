@@ -16,7 +16,8 @@ class home extends CI_Controller{
         // membuat array nama file dan status upload di session
         $this->session->set_userdata('nama_file', null);
         $this->session->set_userdata('status', null);
-		$this->load->view("homeView",$this->login);
+        $this->pengguna = $this->session->userdata('nama_pengguna');
+		$this->load->view("homeView",$this->login, $this->pengguna);
     }
 }
 ?>

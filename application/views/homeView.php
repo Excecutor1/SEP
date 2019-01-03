@@ -93,7 +93,17 @@ http://www.tooplate.com/view/2078-adventure
 						<?php 
 						if ($this->login == 1){
 							$konfirmasi = "Apakah anda yakin ingin keluar?";
-							echo '<a href="logout" class="smoothScroll" onclick="return confirm("'.$konfirmasi.'")">LOGOUT</a>';
+							echo '<a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                <span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>
+                                                <span class="admin-name">'.$this->pengguna.'</span>
+                                                <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
+                                            </a>
+                                            <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
+                                                <li><a href="riwayat"><span class="adminpro-icon adminpro-user-rounded author-log-ic"></span>My Profile</a>
+                                                </li>
+                                                <li><a href="logout" onclick="return confirm('.'"Apakah anda yakin ingin keluar?"'.')"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
+                                                </li>
+                                            </ul>';
 						}
 						else{
 							echo '<a href="login" class="smoothScroll">LOGIN</a>';
@@ -190,7 +200,7 @@ http://www.tooplate.com/view/2078-adventure
 						<h5 style="color: #f9f2d2" class="wow bounceIn">Setengah Enam Pagi</h5>
 						<h1 class="color-white">Apa Itu SEP?</h1>
 						<hr>
-						<p class="color-white">SEP adalah...</p>
+						<p class="color-white">SEP Merupakan Salah Satu Jasa Percetakan yang Ada di Kota Jember, Percetakan tersebut </p>
 					</div>
 				</div>
 
@@ -224,7 +234,7 @@ http://www.tooplate.com/view/2078-adventure
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								<div class="panel-body">
-									<p style="color: #f9f2d2" class="color-white">Pertama-Tama Upload File Yang Ingin di Cetak </p>
+									<p style="color: #f9f2d2" class="color-white">Pertama-Tama Upload File Yang Ingin di Cetak, Pastikan File yang Akan dicetak berformat .Pdf </p>
 								</div>
 							</div>
 						</div>
@@ -267,6 +277,7 @@ http://www.tooplate.com/view/2078-adventure
 						<h1 class="color-white">Mulai Cetak</h1>
 						<hr>
 						<p class="color-white">Mulailah Mencetak dengan Cara Baru Melalui Website SEP, Untuk Mulai Mencetak Klik Tombol dibawah Ini</p>
+						<br>
 						<button onclick="window.location.href='uploadFile'" class="btn btn-primary">Cetak</button>
 					</div>
 				</div>
