@@ -301,7 +301,7 @@ http://www.tooplate.com/view/2078-adventure
 				<!-- List Harga -->
 
 				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-					<div class="plan">
+					<div class="plan" style="height: 750px;" >
 						<h2 class="plan-title">Berwarna</h2>
 						<div class="plan-price">
 							<h1 class="plan-price-title">Low </h1>
@@ -325,31 +325,56 @@ http://www.tooplate.com/view/2078-adventure
 				</div>
 
 				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-					<div class="plan">
+					<div class="plan" style="height: 750px;" >
 						<h2 class="plan-title">Hitam Putih</h2>
+						<div class="plan-price">
+							<h1 class="plan-price-title">Low </h1>
+						</div>
 						<ul class="plan-list">
 							<li>Rp 300,- / <small style="color: #f9f2d2">Lembar</small></li>
 						</ul>
+						<div class="plan-price">
+							<h1 class="plan-price-title">Medium </h1>
+						</div>
+						<ul class="plan-list">
+							<li>Rp 700,- / <small style="color: #f9f2d2">Lembar</small></li>
+						</ul>
+						<div class="plan-price">
+							<h1 class="plan-price-title">High</h1>
+						</div>
+						<ul class="plan-list">
+							<li>Rp 1500,- / <small style="color: #f9f2d2">Lembar</small></li>
+						</ul>
 					</div>
 				</div>
-
 				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
 					<div class="plan">
-						<h2 class="plan-title">Kertas</h2>
+						<h2 class="plan-title">Jilid</h2>
 						<div class="plan-price">
-							<h1 class="plan-price-title">A4 70gram</h1>
+							<h1 class="plan-price-title">Jilid Mika</h1>
 						</div>
 						<ul class="plan-list">
-							<li>Rp 200,- / <small style="color: #f9f2d2">Lembar</small></li>
+							<li>Rp 2500,- | <small style="color: #f9f2d2">Tipis</small></li>
 						</ul>
-						<div class="plan-price">
-							<h1 class="plan-price-title">F4 70gram</h1>
+						<ul class="plan-list">
+							<li>Rp 3000,- | <small style="color: #f9f2d2">Sedang</small></li>
+						</ul>
+						<ul class="plan-list">
+							<li>Rp 5000,- | <small style="color: #f9f2d2">Tebal</small></li>
+						</ul><div class="plan-price">
+							<h1 class="plan-price-title">Jilid Soft Cover</h1>
 						</div>
 						<ul class="plan-list">
-							<li>Rp 150,- / <small style="color: #f9f2d2">Lembar</small></li>
+							<li>Rp 5000,- | <small style="color: #f9f2d2">Tipis</small></li>
+						</ul>
+						<ul class="plan-list">
+							<li>Rp 6000,- | <small style="color: #f9f2d2">Sedang</small></li>
+						</ul>
+						<ul class="plan-list">
+							<li>Rp 7500,- | <small style="color: #f9f2d2">Tebal</small></li>
 						</ul>
 					</div>
-					</div>
+				</div>
 					
 				</div>
 			</div>
