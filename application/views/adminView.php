@@ -86,8 +86,9 @@
                             </li>
                             <li class="nav-item"><a href="belumCetak" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa fa-clock-o"></i> <span class="mini-dn">File Belum Cetak</span> </a>
                             </li>
-                            <li class="nav-item"><a href="sudahCetak" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="glyphicon glyphicon-ok"></i> <span class="mini-dn">File Sudah Cetak</span> <span class="indicator-right-menu mini-dn"></i></span></a>
-                             
+                            <li class="nav-item"><a href="sudahCetak" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="glyphicon glyphicon-ok"></i> <span class="mini-dn">File Sudah Cetak</span> <span class="indicator-right-menu mini-dn"></i></span></a>                             
+                            </li>
+                            <li class="nav-item"><a href="saldo" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="glyphicon glyphicon-usd"></i> <span class="mini-dn">Saldo</span> <span class="indicator-right-menu mini-dn"></i></span></a>                             
                             </li>
                             
                             
