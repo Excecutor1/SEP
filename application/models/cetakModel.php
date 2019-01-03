@@ -16,8 +16,8 @@ class cetakModel extends CI_Model{
 
     // Mengambil informasi file yang belum di cetak sesuai id transaksi
     // =======================================================================================================
-	public function detailCetak($id){
-		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN kertas JOIN finishing JOIN warna JOIN berkas WHERE kertas.id_kertas = cetak.id_kertas AND finishing.id_finishing = cetak.id_finishing AND berkas.id_berkas = cetak.id_berkas AND cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_transaksi = ".$id."");
+	public function detailCetak($id_transaksi){
+		$sql = sprintf("SELECT * FROM transaksi JOIN pengguna JOIN admin_online JOIN status JOIN cetak JOIN kertas JOIN finishing JOIN warna JOIN berkas WHERE kertas.id_kertas = cetak.id_kertas AND finishing.id_finishing = cetak.id_finishing AND berkas.id_berkas = cetak.id_berkas AND cetak.id_warna = warna.id_warna AND transaksi.id_pengguna = pengguna.id_pengguna AND cetak.id_transaksi = transaksi.id_transaksi AND transaksi.id_status = status.id_status AND transaksi.id_transaksi = ".$id_transaksi."");
 		$data=$this->db->query($sql);
 		return $data->result_array();
 	}
@@ -55,8 +55,8 @@ class cetakModel extends CI_Model{
 
 	// Membuka file yang dipilih
 	// ======================================================================================================
-	public function getFile($id){
-		$query = $this->db->get_where('berkas', array('id_berkas' => $id));
+	public function getFile($id_berkas){
+		$query = $this->db->get_where('berkas', array('id_berkas' => $id_berkas));
 		foreach ($query->result() as $data) {
 			$file = "file/".$data->berkas;
 			$nama = $data->berkas;
@@ -140,7 +140,7 @@ class cetakModel extends CI_Model{
 
 	// mengambil data saldo
 	// =================================================================
-	public function getSaldo($id){
+	public function getSaldo($id_transaksi){
 		$query = $this->db->query("SELECT saldo FROM transaksi JOIN pengguna WHERE pengguna.id_pengguna = transaksi.id_pengguna AND transaksi.id_transaksi = '".$id."'");
 		foreach ($query->result_array() as $row) {
 			return (int) $row['saldo'];
@@ -159,12 +159,15 @@ class cetakModel extends CI_Model{
 
 	// menyimpan harga ke table
 	// ================================================================
-	public function simpanHarga($id,$harga){
+	public function simpanHarga($id_transaksi,$harga){
 		$data = array(
 			'harga' => $harga,
 		);
-		$this->db->where('id_transaksi', $id);
+		$this->db->where('id_transaksi', $id_transaksi);
 		$this->db->update('transaksi', $data);
 	}	
+	public function bayar(){
+
+	}
 }
 ?>

@@ -16,8 +16,8 @@ class belumCetak extends CI_Controller{
         // membuka file yang di upload sesuai id
         // ========================================================
     public function lihatFile(){
-        $id = $this->uri->segment(3);
-        $this->cetakModel->getFile($id);
+        $id_berkas = $this->uri->segment(3);
+        $this->cetakModel->getFile($id_berkas);
     }
 
         // selesai mencetak
@@ -30,8 +30,8 @@ class belumCetak extends CI_Controller{
         // halaman detail
         // ========================================================
     public function detail(){
-        $id = $this->uri->segment(3);
-        $this->data['hasil']=$this->cetakModel->detailCetak($id);
+        $id_transaksi = $this->uri->segment(3);
+        $this->data['hasil']=$this->cetakModel->detailCetak($id_transaksi);
         $this->level = $this->session->userdata('level');
         $this->pengguna = $this->session->userdata;
         $this->alert = $this->session->flashdata('alert');
@@ -41,10 +41,10 @@ class belumCetak extends CI_Controller{
         // halaman input harga
         // ========================================================
     public function harga(){
-        $this->id = $this->uri->segment(3);
+        $this->id_transaksi = $this->uri->segment(3);
         $this->level = $this->session->userdata('level');
         $this->pengguna = $this->session->userdata;
-        $this->load->view('hargaView', $this->level, $this->pengguna, $this->id);
+        $this->load->view('hargaView', $this->level, $this->pengguna, $this->id_transaksi);
     }
 
         // halaman simpan harga, cek saldo apakah cukup
@@ -52,34 +52,34 @@ class belumCetak extends CI_Controller{
     public function simpanHarga(){
         if (isset($_POST['simpan'])) {
             $harga = $_POST['harga'];
-            $id = $this->uri->segment(3);
+            $id_transaksi = $this->uri->segment(3);
             // simpan harga ke database
             // ======================================================
-            $this->cetakModel->simpanHarga($id,$harga);
+            $this->cetakModel->simpanHarga($id_transaksi,$harga);
             // mengambil saldo pengguna
             // =======================================================
-            $saldo = $this->cetakModel->getSaldo($id);
+            $saldo = $this->cetakModel->getSaldo($id_transaksi);
             // cek apakah saldo masih ada sisa/cukup
             // =======================================================
             if (($saldo-$harga)>=0) {
-                redirect('belumCetak/cetak/'.$id.'');
+                redirect('belumCetak/cetak/'.$id_transaksi.'');
             // cek apakah saldo kurang
             // =======================================================
             }elseif (($saldo-$harga)<0) {
                 $this->cetakModel->saldoTidakcukup($id);
                 $alert = '<div class="alert alert-danger alert-st-one" role="alert">Saldo tidak cukup</div>';
                 $this->session->set_flashdata('alert', $alert);
-                redirect('belumCetak/detail/'.$id.'');
+                redirect('belumCetak/detail/'.$id_transaksi.'');
             }
 
         }
     }
     public function cetak(){
-        $id = $this->uri->segment(3);
-        $this->data['hasil']=$this->cetakModel->detailCetak($id);
+        $id_transaksi = $this->uri->segment(3);
+        $this->data['hasil']=$this->cetakModel->detailCetak($id_transaksi);
         $this->level = $this->session->userdata('level');
         $this->pengguna = $this->session->userdata;
-        $this->cetakModel->bayar($id);
+        $this->cetakModel->bayar($id_transaksi);
         $this->load->view('cetakView', $this->data, $this->level, $this->pengguna);   
     }
     public function tabel(){

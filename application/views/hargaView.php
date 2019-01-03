@@ -208,7 +208,7 @@
           <div class="mb-3">
                 <div class="x_panel">
                   <div class="x_content" style="padding: 3%">
-                    <form role="form" action="../simpanHarga/<?php echo $this->id; ?>" method="POST">
+                    <form role="form" action="../simpanHarga/<?php echo $this->id_transaksi; ?>" method="POST">
                             <div class="col-lg-12">
                                 <div class="login-bg" style="padding: 0px">
                                     <!-- <div class="row"> -->

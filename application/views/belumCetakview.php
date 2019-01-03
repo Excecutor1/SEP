@@ -220,13 +220,13 @@
     											<tbody>
     												<?php foreach($hasil as $row){ ?>
     													<tr class="even pointer">
-    														<?php $this->id = $row['id_transaksi'];?>
+    														<?php $this->id_transaksi = $row['id_transaksi'];?>
     														<td><?php echo $row['id_transaksi']; ?></td>
                                                             <td><?php echo $row['waktu']; ?></td>
     														<td><?php echo $row['nama_pengguna']; ?></td>
     														<td><?php echo $row['status']; ?></td>
     														<td><?php echo $row['harga']; ?></td>
-    														<td><?php echo '<a href="belumCetak/detail/'.$this->id.'">detail</a>'?></td>
+    														<td><?php echo '<a href="belumCetak/detail/'.$this->id_transaksi.'">detail</a>'?></td>
     													</tr>  
     												<?php }; ?>
     											</tbody>
