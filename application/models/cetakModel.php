@@ -141,7 +141,7 @@ class cetakModel extends CI_Model{
 	// mengambil data saldo
 	// =================================================================
 	public function getSaldo($id_transaksi){
-		$query = $this->db->query("SELECT saldo FROM transaksi JOIN pengguna WHERE pengguna.id_pengguna = transaksi.id_pengguna AND transaksi.id_transaksi = '".$id."'");
+		$query = $this->db->query("SELECT saldo FROM transaksi JOIN pengguna WHERE pengguna.id_pengguna = transaksi.id_pengguna AND transaksi.id_transaksi = '".$id_transaksi."'");
 		foreach ($query->result_array() as $row) {
 			return (int) $row['saldo'];
 		}
@@ -166,8 +166,40 @@ class cetakModel extends CI_Model{
 		$this->db->where('id_transaksi', $id_transaksi);
 		$this->db->update('transaksi', $data);
 	}	
-	public function bayar(){
 
+	// Mengurangi jumlah saldo dengan jumlah ongkos cetak
+	// ===============================================================
+	public function bayar($id_transaksi){
+
+		// Mengambil jumlah saldo
+		// ==============================================================
+		$query = $this->db->query("SELECT saldo FROM pengguna JOIN transaksi WHERE pengguna.id_pengguna = transaksi.id_pengguna AND transaksi.id_transaksi ='".$id_transaksi."'");
+		$saldo;
+		foreach ($query->result_array() as $row) {
+			$saldo = intval($row['saldo']);
+		};
+
+		// Mengambil data harga dan id_pengguna dari tabel transaksi
+		// ================================================================
+		$query = $this->db->query("SELECT harga, id_pengguna FROM transaksi WHERE transaksi.id_transaksi ='".$id_transaksi."'");
+		$harga;
+		$id_pengguna;
+		foreach ($query->result_array() as $row) {
+			$harga = intval($row['harga']);
+			$id_pengguna = $row['id_pengguna'];
+		};
+
+		// Mengurangi saldo dengan harga cetak
+		// ====================================================================
+		$hasil = $saldo - $harga;
+
+		// Update saldo
+		// ====================================================================
+		$data = array(
+			'saldo' => $hasil,
+		);
+		$this->db->where('id_pengguna', $id_pengguna);
+		$this->db->update('pengguna', $data);	
 	}
 }
 ?>
