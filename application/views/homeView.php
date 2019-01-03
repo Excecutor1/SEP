@@ -83,33 +83,25 @@ http://www.tooplate.com/view/2078-adventure
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="riwayat">RIWAYAT</a></li>
 					<li><a href="#work" class="smoothScroll">BERANDA</a></li>
 					<li><a href="#about" class="smoothScroll">TENTANG</a></li>
 					<li><a href="#team" class="smoothScroll">CETAK</a></li>
 					<li><a href="#plan" class="smoothScroll">HARGA</a></li>
-					<li>
+
+					
+					
 						<!-- cek apakah user sudah login -->
 						<?php 
 						if ($this->login == 1){
 							$konfirmasi = "Apakah anda yakin ingin keluar?";
-							echo '<a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                <span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>
-                                                <span class="admin-name">'.$this->pengguna.'</span>
-                                                <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
-                                            </a>
-                                            <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
-                                                <li><a href="riwayat"><span class="adminpro-icon adminpro-user-rounded author-log-ic"></span>My Profile</a>
-                                                </li>
-                                                <li><a href="logout" onclick="return confirm('.'"Apakah anda yakin ingin keluar?"'.')"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Keluar</a>
-                                                </li>
-                                            </ul>';
+							echo '<li><a href="riwayat">RIWAYAT</a></li>';
+							echo '<li><a href="logout" class="smoothScroll">LOGOUT</a></li>';
 						}
 						else{
-							echo '<a href="login" class="smoothScroll">LOGIN</a>';
+							echo '<li><a href="login" class="smoothScroll">LOGIN</a></li>';
 						}
 						?>                
-					</li>
+					
 				</ul>
 			</div>
 
@@ -121,7 +113,7 @@ http://www.tooplate.com/view/2078-adventure
 	================================================== -->
 	<div id="home">
 		<div class="site-slider" >
-			<img class="img-responsive" src="style/adventure/images/picture.jpg" ">
+			<img class="img-responsive" src="style/adventure/images/sep.jpg" ">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">

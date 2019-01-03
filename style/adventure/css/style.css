@@ -199,6 +199,7 @@ hr {
 }    
 
 .custom-navbar .nav li a {
+  background-color: black;
 	display: block;
 	padding: 15px 20px;
     color: #ffffff;
