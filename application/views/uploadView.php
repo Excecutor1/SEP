@@ -82,7 +82,7 @@
                                 </div>
                                 <div class="row">
                                     <br>
-                                    <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>format yang didukung: </strong>pdf</p></div>
+                                    <div class="alert alert-success alert-st-one" role="alert"><p class="message-mg-rt"><strong>Format yang didukung    : </strong>pdf</p><br><strong>Ukuran Maksimal File       : </strong>25MB</p></div>
                                     <?php echo $error ?>
                                     <br>
                                     <?php echo $nama_file;?>

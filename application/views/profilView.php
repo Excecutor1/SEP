@@ -92,6 +92,9 @@
                                                 </ul>
                                                 <!-- <?php  ?> -->
                                                 <div class="panel panel-default">
+                                                   <div class="panel-heading" data-toggle="collapse" data-target="#id_pengguna">Id Pengguna</div>
+                                                   <div id="id_pengguna" class="panel-body collapse" ><?php echo $row['id_pengguna']; ?>    
+                                                    <small style="color: blue"> ( id ini digunakan untuk top up saldo ) </small></div>
                                                    <div class="panel-heading" data-toggle="collapse" data-target="#nama_pengguna">Nama Pengguna</div>
                                                    <div id="nama_pengguna" class="panel-body collapse"><?php echo $row['nama_pengguna']; ?></div>
                                                    <div class="panel-heading" data-toggle="collapse" data-target="#alamat">Alamat</div>
@@ -99,7 +102,7 @@
                                                    <div class="panel-heading" data-toggle="collapse" data-target="#email">E-mail</div>
                                                    <div id="email" class="panel-body collapse"><?php echo $row['email']; ?></div>
                                                    <div class="panel-heading" data-toggle="collapse" data-target="#telp">No. Telepon</div>
-                                                   <div id="telp" class="panel-body collapse"><?php echo $row['no_telp']; ?></div>
+                                                   <div id="telp" class="panel-body collapse"><?php echo $row['no_tlp']; ?></div>
                                                    <div class="panel-heading" data-toggle="collapse" data-target="kata_sandi">Kata Sandi</div>
                                                    <div id="kata_sandi" class="panel-body collapse">ganti kata sandi (beta)</div>
                                                </div>

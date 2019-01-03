@@ -9,7 +9,7 @@ class uploadFile extends CI_Controller{
             $this->load->helper(array('form', 'url'));
             $config['upload_path']          = 'file/';
             $config['allowed_types']        = 'pdf';
-            $config['max_size']             = 1000;
+            $config['max_size']             = 25000;
 
             $this->load->library('upload', $config);
     	}
