@@ -94,7 +94,7 @@ http://www.tooplate.com/view/2078-adventure
 						<?php 
 						if ($this->login == 1){
 							$konfirmasi = "Apakah anda yakin ingin keluar?";
-							echo '<li><a href="riwayat">RIWAYAT</a></li>';
+							echo '<li><a href="riwayat">AKUN SAYA</a></li>';
 							echo '<li><a href="logout" class="smoothScroll">LOGOUT</a></li>';
 						}
 						else{

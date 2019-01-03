@@ -67,76 +67,79 @@
 
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#">Riwayat</a></li>
-                            <li><a href="profil">Profil</a></li>
-                        </ul>
-                        <div class="karyawan-top">
-                            <div style="margin-top: 1%;" class="col-xs-6">
-                                <p class="text-center" style="margin-left: 0%;"><strong style="font-size: 30px; color: white;">Riwayat</strong> </p>
-                            </div>
-                            <div style="margin-top: 2%; " class="col-xs-6">
-                                <button style="margin-left: 35%;" class="btn btn-warning" onclick="window.location.href='home'">Beranda </button>
-                            </div>
-
-                        </div>
-                        <div style="background-color: #f7ba86; border: 0px;" class="login-bg">                                                     
-                            <form>
-
-                                <div class="form-group-inner">
-                                    <div id="tabel" class="table-responsive">
-                                        <?php
-                                        $i=0; 
-                                        foreach ($cetak as $row) {?>
-                                            <ul class="nav nav-tabs">
-                                                <li class="active"><a href="#"><b>No. <?php $i++; echo $i; ?></b></a></li>
-
-                                            </ul>
-                                            <!-- <?php  ?> -->
-                                            <div class="panel panel-default">
-                                               <div class="panel-heading">Waktu Cetak</div>
-                                               <div class="panel-body"><?php echo $row['waktu']; ?></div>
-                                               <div class="panel-heading">Berkas</div>
-                                               <div class="panel-body"><?php echo $row['berkas']; ?></div>
-                                               <div class="panel-heading">Status</div>
-                                               <div class="panel-body">
-                                                <?php if($row['id_status']==1){
-                                                    echo "<div class='alert alert-warning' role='alert'>
-                                                    ".$row['status']."</div>";
-                                                }else if($row['id_status']==2){
-                                                    echo "<div class='alert alert-success' role='alert'>
-                                                    ".$row['status']."</div>";
-                                                    }else{echo "<div class='alert alert-danger' role='alert'>
-                                                    ".$row['status']."</div>";
-
-                                                } ?></div>
-
-                                            </div>
-                                        <?php }; ?>
-
-
-
-                                    </div>
-
+                            <ul class="nav nav-tabs">
+                                <li><a href="riwayat">Riwayat</a></li>
+                                <li class="active"><a href="profil">Profil</a></li>
+                            </ul>
+                            <div class="karyawan-top">
+                                <div style="margin-top: 1%;" class="col-xs-6">
+                                    <p class="text-center" style="margin-left: 0%;"><strong style="font-size: 30px; color: white;">Profil</strong> </p>
                                 </div>
-                            </form>
-                        </div>
+                                <div style="margin-top: 2%; " class="col-xs-6">
+                                    <button style="margin-left: 35%;" class="btn btn-warning" onclick="window.location.href='home'">Beranda </button>
+                                </div>
+                            </div>
+                            <div style="background-color: #f7ba86; border: 0px;" class="login-bg">                                                     
+                                <form>
+
+                                    <div class="form-group-inner">
+                                        <div id="tabel" class="table-responsive">
+                                            <?php
+                                            foreach ($dataPengguna as $row) {?>
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active"><a href="#"><b><?php echo $row['nama_lengkap']; ?></b></a></li>
+
+                                                </ul>
+                                                <!-- <?php  ?> -->
+                                                <div class="panel panel-default">
+                                                   <div class="panel-heading" data-toggle="collapse" data-target="#nama_pengguna">Nama Pengguna</div>
+                                                   <div id="nama_pengguna" class="panel-body collapse"><?php echo $row['nama_pengguna']; ?></div>
+                                                   <div class="panel-heading" data-toggle="collapse" data-target="#alamat">Alamat</div>
+                                                   <div id="alamat" class="panel-body collapse"><?php echo $row['alamat']; ?></div>
+                                                   <div class="panel-heading" data-toggle="collapse" data-target="#email">E-mail</div>
+                                                   <div id="email" class="panel-body collapse"><?php echo $row['email']; ?></div>
+                                                   <div class="panel-heading" data-toggle="collapse" data-target="#telp">No. Telepon</div>
+                                                   <div id="telp" class="panel-body collapse"><?php echo $row['no_telp']; ?></div>
+                                                   <div class="panel-heading" data-toggle="collapse" data-target="kata_sandi">Kata Sandi</div>
+                                                   <div id="kata_sandi" class="panel-body collapse">ganti kata sandi (beta)</div>
+                                               </div>
+                                               <div class="panel panel-default">
+                                                   <div class="panel-heading">Sisa Saldo</div>
+                                                   <div class="panel-body"><?php echo "Rp ".$row['saldo']; ?></div>
+                                               </div>
+                                           <?php }; ?>
 
 
 
-                    </div>
+                                       </div>
+
+                                   </div>
+                               </form>
+                           </div>
 
 
 
-                </div>
-            </div>
-            <!-- login End-->
-        </div>
-    </div>
-    <!-- Footer Start-->
+                       </div>
+
+                   </div>
+               </form>
+           </div>
 
 
-    <!-- Footer End-->
+
+       </div>
+
+
+
+   </div>
+</div>
+<!-- login End-->
+</div>
+</div>
+<!-- Footer Start-->
+
+
+<!-- Footer End-->
     <!-- jquery
         ============================================ -->
         <script src="style/js/vendor/jquery-1.11.3.min.js"></script>
