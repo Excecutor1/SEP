@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Konfirmasi</title>
+    <title>Riwayat</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -66,6 +66,15 @@
                     <div class="row">
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4">
+                            <div class="karyawan-top">
+                                <div style="margin-top: 1%;" class="col-xs-6">
+                                    <p class="text-center" style="margin-left: 0%;"><strong style="font-size: 30px; color: white;">Riwayat</strong> </p>
+                                </div>
+                                <div style="margin-top: 2%; " class="col-xs-6">
+                                    <button style="margin-left: 35%;" class="btn btn-warning" onclick="window.location.href='home'">Beranda </button>
+                                </div>
+
+                                </div>
                             <div style="background-color: #f7ba86; border: 0px;" class="login-bg">                                                     
                                 <form>
 
@@ -87,11 +96,14 @@
                                                    <div class="panel-heading">Status</div>
                                                    <div class="panel-body">
                                                     <?php if($row['id_status']==1){
-                                                        echo "<div class='alert alert-danger' role='alert'>
+                                                        echo "<div class='alert alert-warning' role='alert'>
                                                     ".$row['status']."</div>";
-                                                }else{
+                                                }else if($row['id_status']==2){
                                                     echo "<div class='alert alert-success' role='alert'>
                                                     ".$row['status']."</div>";
+                                                }else{echo "<div class='alert alert-danger' role='alert'>
+                                                    ".$row['status']."</div>";
+
                                                 } ?></div>
 
                                                </div>

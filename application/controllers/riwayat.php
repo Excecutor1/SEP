@@ -1,5 +1,5 @@
 <?php
-class konfirmasi extends CI_Controller{
+class riwayat extends CI_Controller{
 
 	public function __construct(){
        parent::__construct();
@@ -15,7 +15,7 @@ class konfirmasi extends CI_Controller{
         public function index(){
             $id = $this->session->userdata('id_pengguna');
             $this->data['cetak'] = $this->cetakModel->detailCetak2($id);
-            $this->load->view('konfirmasiView', $this->data);
+            $this->load->view('riwayatView', $this->data);
       }
 
   }

@@ -29,7 +29,7 @@ class pengaturanFile extends CI_Controller{
 			$data['keterangan']=$_POST['keterangan'];
 			$id_transaksi = $this->cetakModel->simpanCetak($data);
 			$this->session->set_userdata('id_transaksi', $id_transaksi);
-			redirect('konfirmasi');
+			redirect('riwayat');
 			}	
 
 	}
