@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 03, 2019 at 07:45 AM
+-- Generation Time: Jan 03, 2019 at 10:50 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -182,9 +182,9 @@ CREATE TABLE `pengguna` (
 
 INSERT INTO `pengguna` (`id_pengguna`, `id_level`, `nama_lengkap`, `alamat`, `email`, `no_tlp`, `nama_pengguna`, `kata_sandi`, `saldo`) VALUES
 (1, 'lvl1', 'Priya Yudha Swandana', 'perum. pondok tanggul asri', 'priyayudha.sw27@gmai', '081330375369', 'dono', '123', 0),
-(2, 'lvl2', 'Aditia Afif', 'lumajang', 'adit@gmail.com', '080808800800', 'adit', '123', 0),
+(2, 'lvl2', 'Aditia Afif', 'lumajang', 'adit@gmail.com', '080808800800', 'adit', '123', 100000),
 (3, 'lvl1', 'Rizal', 'Jember', 'a@gmail.com', '0822123265', 'Rizal87', '1234', 0),
-(4, 'lvl2', 'dana', 'jlg', 'igli', '97', 'dana', '123', 10000),
+(4, 'lvl2', 'dana', 'jlg', 'igli', '97', 'dana', '123', 115000),
 (5, 'lvl2', 'deta', 'olaoiwbo', 'doscok@gmail.com', '162124', 'deta', '123', 0),
 (6, 'lvl2', 'hana', 'tanggul', 'hana@yuhu', '09812098123', 'hana', '123', 0),
 (7, 'lvl2', 'arif', 'baturaden', 'dos.cok@gmail.com', '08108108108', 'arif', '123', 0),
@@ -228,15 +228,21 @@ CREATE TABLE `transaksi` (
   `id_status` int(11) NOT NULL DEFAULT '1',
   `waktu_selesai` int(11) DEFAULT NULL,
   `harga` int(20) DEFAULT NULL,
-  `waktu` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `waktu` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `topup` int(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `transaksi`
 --
 
-INSERT INTO `transaksi` (`id_transaksi`, `id_jenis_transaksi`, `id_admin`, `id_pengguna`, `id_status`, `waktu_selesai`, `harga`, `waktu`) VALUES
-(2, 'tr1', NULL, 2, 1, NULL, NULL, '2019-01-03 13:43:05');
+INSERT INTO `transaksi` (`id_transaksi`, `id_jenis_transaksi`, `id_admin`, `id_pengguna`, `id_status`, `waktu_selesai`, `harga`, `waktu`, `topup`) VALUES
+(2, 'tr1', NULL, 2, 1, NULL, NULL, '2019-01-03 13:43:05', NULL),
+(3, 'tr1', NULL, 4, 1, NULL, NULL, '2019-01-03 15:35:03', 20000),
+(4, 'tr1', NULL, 4, 1, NULL, NULL, '2019-01-03 15:36:09', 10000),
+(5, 'tr2', NULL, 4, 1, NULL, NULL, '2019-01-03 16:00:40', 50000),
+(7, 'tr2', NULL, 4, 1, NULL, NULL, '2019-01-03 16:40:38', 25000),
+(8, 'tr2', NULL, 2, 1, NULL, NULL, '2019-01-03 16:42:32', 100000);
 
 -- --------------------------------------------------------
 
@@ -367,7 +373,7 @@ ALTER TABLE `pengguna`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Constraints for dumped tables
