@@ -119,7 +119,7 @@ class cetakModel extends CI_Model{
 	// Menyimpan data cetak setelah pengguna selesai mencetak
 	// ======================================================================================================
 	public function simpanCetak($data){
-		$this->db->query("INSERT INTO transaksi (id_pengguna) VALUES ('".$data['id_pengguna']."')");
+		$this->db->query("INSERT INTO transaksi (id_pengguna,id_jenis_transaksi) VALUES ('".$data['id_pengguna']."','tr1')");
 		$id_transaksi = $this->db->insert_id();
 		$this->db->query("INSERT INTO cetak (id_transaksi,id_berkas,id_kertas,id_warna,id_finishing,salinan,keterangan)
 			VALUES ('".$id_transaksi."','".$data['id_berkas']."','".$data['id_kertas']."','".$data['id_warna']."','".$data['id_finishing']."','".$data['salinan']."','".$data['keterangan']."')");

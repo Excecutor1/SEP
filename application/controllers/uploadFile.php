@@ -38,7 +38,7 @@ class uploadFile extends CI_Controller{
                 {
                         // set userdata status dengan error upload file
                         $this->session->set_userdata('status', $this->upload->display_errors());
-                        redirect('upload_file');
+                        redirect('uploadFile');
                 }
                 else
                 {      

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 03, 2019 at 12:51 AM
+-- Generation Time: Jan 03, 2019 at 07:45 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -56,9 +56,7 @@ CREATE TABLE `berkas` (
 --
 
 INSERT INTO `berkas` (`id_berkas`, `berkas`) VALUES
-(2, '115-252-1-PB3.pdf'),
-(1, '412-1312-1-PB1.pdf'),
-(3, 'Persiapan_diklat_alam2.docx');
+(1, '132307-ID-none.pdf');
 
 -- --------------------------------------------------------
 
@@ -74,7 +72,6 @@ CREATE TABLE `cetak` (
   `id_finishing` varchar(6) NOT NULL,
   `salinan` char(3) NOT NULL,
   `waktu_proses` int(11) NOT NULL,
-  `harga` char(15) NOT NULL,
   `keterangan` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -82,10 +79,8 @@ CREATE TABLE `cetak` (
 -- Dumping data for table `cetak`
 --
 
-INSERT INTO `cetak` (`id_transaksi`, `id_berkas`, `id_kertas`, `id_warna`, `id_finishing`, `salinan`, `waktu_proses`, `harga`, `keterangan`) VALUES
-(1, 1, 'kts02', 'wrn1', 'Fin02', '1', 0, '', 's'),
-(2, 2, 'kts01', 'wrn1', 'fin01', '1', 0, '', 'w'),
-(3, 3, 'kts01', 'wrn2', 'fin01', '1', 0, '', 'joooooooooooooooooooo');
+INSERT INTO `cetak` (`id_transaksi`, `id_berkas`, `id_kertas`, `id_warna`, `id_finishing`, `salinan`, `waktu_proses`, `keterangan`) VALUES
+(2, 1, 'kts01', 'wrn2', 'fin01', '1', 0, 'llihvbw');
 
 -- --------------------------------------------------------
 
@@ -105,6 +100,25 @@ CREATE TABLE `finishing` (
 INSERT INTO `finishing` (`id_finishing`, `finishing`) VALUES
 ('fin01', 'Jilid'),
 ('Fin02', 'Staples');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jenis_transaksi`
+--
+
+CREATE TABLE `jenis_transaksi` (
+  `id_jenis_transaksi` varchar(3) NOT NULL,
+  `jenis_transaksi` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `jenis_transaksi`
+--
+
+INSERT INTO `jenis_transaksi` (`id_jenis_transaksi`, `jenis_transaksi`) VALUES
+('tr1', 'cetak dokumen'),
+('tr2', 'isi saldo');
 
 -- --------------------------------------------------------
 
@@ -176,7 +190,9 @@ INSERT INTO `pengguna` (`id_pengguna`, `id_level`, `nama_lengkap`, `alamat`, `em
 (7, 'lvl2', 'arif', 'baturaden', 'dos.cok@gmail.com', '08108108108', 'arif', '123', 0),
 (8, 'lvl2', 'adit', 'lumajang', 'aditia_loverbarca@yahoo.com', '12345', 'adit98', '123', 0),
 (9, 'lvl2', 'adit', 's', 'aditiaafif98@gmail.com', '23', 'donoa', '2', 0),
-(10, 'lvl2', 'adit', 'wdd', 'aditi@jhkj', '23', 'adit98', '2', 0);
+(10, 'lvl2', 'adit', 'wdd', 'aditi@jhkj', '23', 'adit98', '2', 0),
+(11, 'lvl2', 'Priya Yudha Swandana', 'tanggul', 'priyayudha.sw27@gmail.com', '081330374369', 'priyayudha', '123', 150000),
+(12, 'lvl2', 'Aditia Afif A', 'Lumajang', 'aditiaafif98@gmail.com', '085746507505', 'Arfian98', '123', 5000);
 
 -- --------------------------------------------------------
 
@@ -206,11 +222,12 @@ INSERT INTO `status` (`id_status`, `status`) VALUES
 
 CREATE TABLE `transaksi` (
   `id_transaksi` int(11) NOT NULL,
+  `id_jenis_transaksi` varchar(3) NOT NULL,
   `id_admin` int(11) DEFAULT NULL,
   `id_pengguna` int(11) NOT NULL,
   `id_status` int(11) NOT NULL DEFAULT '1',
   `waktu_selesai` int(11) DEFAULT NULL,
-  `harga_total` char(20) DEFAULT NULL,
+  `harga` int(20) DEFAULT NULL,
   `waktu` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -218,10 +235,8 @@ CREATE TABLE `transaksi` (
 -- Dumping data for table `transaksi`
 --
 
-INSERT INTO `transaksi` (`id_transaksi`, `id_admin`, `id_pengguna`, `id_status`, `waktu_selesai`, `harga_total`, `waktu`) VALUES
-(1, NULL, 2, 2, NULL, NULL, '2019-01-03 01:45:36'),
-(2, NULL, 2, 3, NULL, NULL, '2019-01-03 01:46:06'),
-(3, NULL, 4, 2, NULL, NULL, '2019-01-03 04:44:57');
+INSERT INTO `transaksi` (`id_transaksi`, `id_jenis_transaksi`, `id_admin`, `id_pengguna`, `id_status`, `waktu_selesai`, `harga`, `waktu`) VALUES
+(2, 'tr1', NULL, 2, 1, NULL, NULL, '2019-01-03 13:43:05');
 
 -- --------------------------------------------------------
 
@@ -280,6 +295,12 @@ ALTER TABLE `finishing`
   ADD PRIMARY KEY (`id_finishing`);
 
 --
+-- Indexes for table `jenis_transaksi`
+--
+ALTER TABLE `jenis_transaksi`
+  ADD PRIMARY KEY (`id_jenis_transaksi`);
+
+--
 -- Indexes for table `kertas`
 --
 ALTER TABLE `kertas`
@@ -311,7 +332,8 @@ ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`id_transaksi`),
   ADD KEY `id_admin` (`id_admin`),
   ADD KEY `id_pengguna` (`id_pengguna`),
-  ADD KEY `id_satatus` (`id_status`);
+  ADD KEY `id_satatus` (`id_status`),
+  ADD KEY `id_jenis_transaksi` (`id_jenis_transaksi`);
 
 --
 -- Indexes for table `warna`
@@ -333,19 +355,19 @@ ALTER TABLE `admin_online`
 -- AUTO_INCREMENT for table `berkas`
 --
 ALTER TABLE `berkas`
-  MODIFY `id_berkas` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_berkas` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
@@ -379,7 +401,8 @@ ALTER TABLE `pengguna`
 ALTER TABLE `transaksi`
   ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`id_status`) REFERENCES `status` (`id_status`),
   ADD CONSTRAINT `transaksi_ibfk_3` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`),
-  ADD CONSTRAINT `transaksi_ibfk_4` FOREIGN KEY (`id_admin`) REFERENCES `admin_online` (`id_online`);
+  ADD CONSTRAINT `transaksi_ibfk_4` FOREIGN KEY (`id_admin`) REFERENCES `admin_online` (`id_online`),
+  ADD CONSTRAINT `transaksi_ibfk_5` FOREIGN KEY (`id_jenis_transaksi`) REFERENCES `jenis_transaksi` (`id_jenis_transaksi`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
