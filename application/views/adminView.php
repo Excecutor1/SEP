@@ -72,7 +72,7 @@
             <div class="left-sidebar-pro">
                 <nav id="sidebar">
                     <div class="sidebar-header">
-                        <img style="max-width: 100px" src="style/img/logo_sep.png" alt="..." class="img-circle profile_img">
+                        <img style="max-width: 100px" src="./style/adventure/logo_sep.png" alt="..." >
                     </a>
                     <br>
                     <strong>AS</strong>

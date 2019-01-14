@@ -241,7 +241,7 @@ http://www.tooplate.com/view/2078-adventure
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 								<div class="panel-body">
-									<p style="color: #f9f2d2" class="color-white">Atur Pengaturan File Tersebut Sesuai dengan Format yang diinginkan dan Periksa Pengaturan Tersebut  Agar Tidak Terjadi Kesalahan dalam Melakukan Percetakan</p>
+									<p style="color: #f9f2d2" class="color-white">Atur Pengaturan File Tersebut Sesuai dengan Format yang diinginkan dan Periksa Pengaturan Tersebut dengan Teliti Agar Tidak Terjadi Kesalahan dalam Melakukan Percetakan</p>
 								</div>
 							</div>
 						</div>

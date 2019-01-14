@@ -3624,7 +3624,7 @@ ul.profile-contact-menu {
     margin-bottom: 5px;
 }
 .sidebar-header img {
-   border-radius:50%;
+   /*border-radius:50%;*/
    width:50%;
 }
 #sidebar.active .sidebar-header img{

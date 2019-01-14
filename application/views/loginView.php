@@ -72,7 +72,7 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="logo">
-                                                <a href="#"><img style="max-width: 200px" src="style/img/logo_sep.png" alt="" />
+                                                <a href="#"><img style="max-width: 150px" src="./style/adventure/logo_sep.png" alt="" />
                                                 </a>
                                             </div>
                                         </div>
